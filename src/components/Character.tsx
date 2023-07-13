@@ -7,10 +7,12 @@ function Character({ character }: IProps) {
   console.log(character);
   return (
     <div className="character-preview">
-      <h2 className="character__name">{character.name}</h2>
-      <h3 className="character__role">{character.role}</h3>
-      <div className="image-container">
-        <img src={character.avatar} className="character-image ml-5 mb-7" />
+      <div className="flex">
+        <img src={character.avatar} className="character-image" />
+        <div className="ml-20">
+          <h2 className="character__name">{character.name}</h2>
+          <h3 className="character__role">{character.role}</h3>
+        </div>
       </div>
     </div>
   );
