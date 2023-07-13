@@ -28,7 +28,7 @@ function Card() {
   return (
     <div>
       <div className="card">
-        <h1 className="title">L'équipe</h1>
+        <h1 className="title mb-5">L'équipe</h1>
         {characters?.map((character) => (
           <Character character={character} key={character.id} />
         ))}

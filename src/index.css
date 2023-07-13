@@ -75,20 +75,20 @@ h1 {
 }
 
 /* HOMEPAGE */
-.location-image {
+.character-image {
   border-radius: 16px;
-  width: 100%;
+  width: 30%;
 }
 
 /* hotel previews / list */
-.hotel-list {
+.character-list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-.hotel-preview {
+.character-preview {
   padding: 0px;
   width: 60%;
   margin: 0 auto;
@@ -99,12 +99,10 @@ h1 {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.hotel-preview:hover {
-  border: 2px solid rgb(77, 77, 77);
-}
-.hotel-preview h2 {
+
+.character-preview h2 {
   font-size: 20px;
-  color: white;
+  color: black;
   margin: 0px;
 }
 
