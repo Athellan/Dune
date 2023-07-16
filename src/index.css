@@ -153,19 +153,6 @@ h1 {
   flex: 1;
 }
 
-.highlights-price {
-  display: flex;
-  gap: 5px;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-right: 10px;
-}
-
-.per-night {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
 .moreinfo-btn {
   background-color: rgb(251, 173, 18);
   padding: 10px;
@@ -203,12 +190,7 @@ hr {
   margin-bottom: 20px;
 }
 
-.region {
-  color: #9fa0a0;
-  font-size: 15px;
-}
-
-.no-hotels {
+.no-characters {
   padding: 10px;
 }
 
@@ -251,7 +233,7 @@ hr {
   .navbar h1 {
     font-size: 20px;
   }
-  .hotel-preview {
+  .character-preview {
     width: 90%;
     margin: 20px 0;
     border-bottom: 1px solid #fafafa;
@@ -263,7 +245,7 @@ hr {
 }
 
 /* CREATE PAGE */
-/* create new hotel form */
+/* create new character form */
 .create {
   max-width: 400px;
   margin: 0 auto;
@@ -297,12 +279,12 @@ hr {
   cursor: pointer;
 }
 
-.hotel-details {
+.character-details {
   display: grid;
   place-items: center;
   margin-top: 20px;
 }
-.hotel-details button {
+.character-details button {
   background: rgb(77, 77, 77);
   color: #fff;
   border: 0;
