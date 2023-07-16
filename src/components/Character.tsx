@@ -11,10 +11,11 @@ function Character({ character }: IProps) {
       <div className="flex">
         <img src={character.avatar} className="character-image" />
         <div className="">
-          <h2 className="character__name">{character.name}</h2>
+          <h2 className="character__name font-bold">{character.name}</h2>
           <h3 className="character__role">{character.role}</h3>
-          <p className="character_dicton">{character.dicton}</p>
+          <p className="character_dicton">"{character.dicton}"</p>
           <p className="character__description">{character.description}</p>
+          <div className="mt-10 font-bold">En savoir plus</div>
         </div>
       </div>
     </div>

@@ -102,14 +102,19 @@ h1 {
 
 .character-preview h2 {
   font-size: 20px;
-  margin-bottom: 20px;
   margin-top: 15px;
 }
 
 .character-preview h3 {
   font-size: 16px;
   font-style: italic;
-  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.character-preview p {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .title {
