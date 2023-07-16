@@ -9,7 +9,7 @@ function App() {
   return (
     <Routes>
       <Route path="/newcharacter" element={<NewCharacterForm />} />
-      <Route path="/characters/:id" element={<CharacterDetail />} />
+      <Route path="/character/:name" element={<CharacterDetail />} />
       <Route path="/*" element={<NotFound />} />
       <Route path="/" element={<Card />} />
     </Routes>

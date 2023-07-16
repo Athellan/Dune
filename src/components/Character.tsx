@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+import { Link } from "react-router-dom";
 import { Newcharacter } from "../types/character";
 
 interface IProps {
@@ -15,7 +17,12 @@ function Character({ character }: IProps) {
           <h3 className="character__role">{character.role}</h3>
           <p className="character_dicton">"{character.dicton}"</p>
           <p className="character__description">{character.description}</p>
-          <div className="mt-10 font-bold">En savoir plus</div>
+
+          <Link to={`/character/${character.name}`}>
+            <button className="moreinfo-btn mt-10 font-bold">
+              En savoir plus
+            </button>
+          </Link>
         </div>
       </div>
     </div>
