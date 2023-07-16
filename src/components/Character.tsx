@@ -3,6 +3,7 @@ import { Newcharacter } from "../types/character";
 interface IProps {
   character: Newcharacter;
 }
+
 function Character({ character }: IProps) {
   console.log(character);
   return (
