@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* APP */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +22,7 @@ code {
 
 p {
   margin: 0;
+  font-size: small;
 }
 
 h1 {
@@ -38,9 +40,11 @@ h1 {
   margin: 0 auto;
   border-bottom: 2px solid rgb(77, 77, 77);
 }
+
 .navbar h1 {
   color: rgb(77, 77, 77);
 }
+
 .navbar .links {
   margin-left: auto;
   color: rgb(77, 77, 77);
@@ -51,6 +55,7 @@ h1 {
   text-decoration: none;
   padding: 6px;
 }
+
 .navbar a:hover {
   color: rgb(77, 77, 77);
 }
@@ -65,10 +70,12 @@ h1 {
   animation: spin 2s linear infinite;
   margin: 10px auto;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -229,6 +236,7 @@ hr {
     padding-left: 10px;
     font-size: 20px;
   }
+
   .navbar {
     padding: 15px;
     display: flex;
@@ -236,14 +244,17 @@ hr {
     margin: 0 auto;
     border-bottom: 2px solid rgb(77, 77, 77);
   }
+
   .navbar h1 {
     font-size: 20px;
   }
+
   .character-preview {
     width: 90%;
     margin: 20px 0;
     border-bottom: 1px solid #fafafa;
   }
+
   .highlights {
     flex-direction: column;
     align-items: flex-start;
@@ -257,15 +268,18 @@ hr {
   margin: 0 auto;
   text-align: center;
 }
+
 .create label {
   text-align: left;
   display: block;
 }
+
 .create h2 {
   font-size: 20px;
   color: rgb(77, 77, 77);
   margin-bottom: 30px;
 }
+
 .create input,
 .create textarea,
 .create select {
@@ -276,6 +290,7 @@ hr {
   box-sizing: border-box;
   display: block;
 }
+
 .create button {
   background: rgb(77, 77, 77);
   color: #fff;
@@ -290,6 +305,7 @@ hr {
   place-items: center;
   margin-top: 20px;
 }
+
 .character-details button {
   background: rgb(77, 77, 77);
   color: #fff;
@@ -408,12 +424,12 @@ hr {
   width: 80vw;
 }
 
-.search__title > a {
+.search__title>a {
   cursor: pointer;
   text-decoration: none;
 }
 
-.search__title > a {
+.search__title>a {
   cursor: pointer;
   text-decoration: none;
 }

@@ -3,13 +3,13 @@ import "./App.css";
 import NewCharacterForm from "./components/NewCharacterForm";
 import NotFound from "./components/NotFound";
 import Card from "./components/Card";
-import CharacterDetail from "./components/CharacterDetail";
+import CharacterInformation from "./components/CharacterInformation";
 
 function App() {
   return (
     <Routes>
       <Route path="/newcharacter" element={<NewCharacterForm />} />
-      <Route path="/character/:name" element={<CharacterDetail />} />
+      <Route path="/character/:id" element={<CharacterInformation />} />
       <Route path="/*" element={<NotFound />} />
       <Route path="/" element={<Card />} />
     </Routes>

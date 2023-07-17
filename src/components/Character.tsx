@@ -4,10 +4,10 @@ import { Newcharacter } from "../types/character";
 
 interface IProps {
   character: Newcharacter;
+  detailsPage?: boolean; 
 }
 
-function Character({ character }: IProps) {
-  console.log(character);
+function Character({ character, detailsPage }: IProps) {
   return (
     <div className="character-preview">
       <div className="flex">
@@ -18,7 +18,7 @@ function Character({ character }: IProps) {
           <p className="character_dicton">"{character.dicton}"</p>
           <p className="character__description">{character.description}</p>
 
-          <Link to={`/character/${character.name}`}>
+          <Link to={`/character/${character.id}`}>
             <button className="moreinfo-btn mt-10 font-bold">
               En savoir plus
             </button>
