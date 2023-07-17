@@ -15,7 +15,7 @@ function Character({ character, detailsPage }: IProps) {
         <div className="">
           <h2 className="character__name font-bold">{character.name}</h2>
           <h3 className="character__role">{character.role}</h3>
-          <p className="character_dicton">"{character.dicton}"</p>
+          <h4 className="character_dicton mb-5">"{character.dicton}"</h4>
           <p className="character__description">{character.description}</p>
 
           <Link to={`/character/${character.id}`}>
