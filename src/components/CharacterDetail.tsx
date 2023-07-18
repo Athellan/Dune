@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { firestore } from "../lib/controller";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import Character from "./Character";
+import Character from "./CharacterCard";
 
 function CharacterDetail() {
   const { id } = useParams();
@@ -33,13 +33,11 @@ function CharacterDetail() {
   fetchCharacterData; 
   },[]);
 
-  console.log(id);
-
   if (isLoading) return <div className="loading"></div>
   return (
     <div className="character-details">
       {Object.keys(character) && Object.keys(character).length ? (
-        <Character character={character} detailsPage/>
+        <Character character={character}/>
       ) : null}
     </div>
   );
