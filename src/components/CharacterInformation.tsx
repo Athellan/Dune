@@ -1,26 +1,31 @@
-import React from "react";
-import { NewCharacter } from "../types/character";
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-interface IProps {
-  character?: NewCharacter; 
-}
+import { useLocation } from "react-router-dom";
 
-function CharacterInformation({ character }: IProps) {
-  if (!character) {
-    return <div>Loading...</div>;
-  }
 
-  const { id, name, role, dicton, description } = character;
+function CharacterInformation() {
+  
+ 
+  const location = useLocation();
+  const { character } = location.state;
+
 
   return (
-    <div className="card">
-      <h1>Détails du personnage</h1>
-      <p>ID: {id}</p>
-      <p>Nom: {name}</p>
-      <p>Rôle: {role}</p>
-      <p>Dicton: {dicton}</p>
-      <p>Description: {description}</p>
+    <>
+    <h1 className="title mb-5 mt-8">Détail du personnage</h1>
+    <div className="character-preview">
+      <div className="flex">
+        <img src={character.avatar} className="character-image" />
+        <div className="">
+          <h2 className="character__name font-bold">{character.name}</h2>
+          <h3 className="character__role">{character.role}</h3>
+          <h4 className="character_dicton mb-5">"{character.dicton}"</h4>
+          <p className="character__description text-justify">{character.description}</p>
+        </div>
+      </div>
     </div>
+    </>
   );
 }
 

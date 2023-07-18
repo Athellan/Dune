@@ -9,6 +9,7 @@ function App() {
   return (
     <Routes>
       <Route path="/newcharacter" element={<NewCharacterForm />} />
+
       <Route path="/character/:id" element={<CharacterInformation />} />
       <Route path="/*" element={<NotFound />} />
       <Route path="/" element={<CharacterList />} />

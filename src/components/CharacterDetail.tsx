@@ -8,7 +8,7 @@ import Character from "./CharacterCard";
 
 function CharacterDetail() {
   const { id } = useParams();
-
+  
   // fetch a single character from the API
   const getCharacter = doc(firestore, `characters/${id}`);
 
