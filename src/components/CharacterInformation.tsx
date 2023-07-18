@@ -5,11 +5,8 @@ import { useLocation } from "react-router-dom";
 
 
 function CharacterInformation() {
-  
- 
   const location = useLocation();
   const { character } = location.state;
-
 
   return (
     <>
