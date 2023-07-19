@@ -41,45 +41,47 @@ function CharacterInformation() {
       <div className="character-preview">
         <div className="flex flex-col">
           <img src={editedCharacter.avatar} className="character-image mx-auto mt-5" />
-          <div className="character-details">
+          <hr className="border-t border-black mx-auto w-4/6" />
+          <div className="">
             {editMode ? (
               <>
-                <div className="input-group">
-                  <label>Nom:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={editedCharacter.name}
-                    onChange={handleInputChange}
-                    className="character__name font-bold"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Rôle:</label>
-                  <input
-                    type="text"
-                    value={editedCharacter.role}
-                    onChange={handleInputChange}
-                    className="character__role"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Dicton:</label>
-                  <textarea
-                    name="dicton"
-                    value={editedCharacter.dicton}
-                    onChange={handleInputChange}
-                    className="character_dicton"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Description:</label>
-                  <textarea
-                    name="description"
-                    value={editedCharacter.description}
-                    onChange={handleInputChange}
-                    className="character__description text-justify"
-                  />
+                <div className="character-details">
+                  <div className="flex flex-col">
+                    <div className="input-group flex">
+                      <label>Nom:</label>
+                      <input
+                        type="text"
+                        value={editedCharacter.name}
+                        onChange={handleInputChange}
+                        className="character__name font-bold"
+                      />
+                    </div>
+                    <div className="input-group flex">
+                      <label>Rôle:</label>
+                      <input
+                        type="text"
+                        value={editedCharacter.role}
+                        onChange={handleInputChange}
+                        className="character__role"
+                      />
+                    </div>
+                    <div className="input-group flex">
+                      <label>Dicton:</label>
+                      <textarea
+                        value={editedCharacter.dicton}
+                        onChange={handleInputChange}
+                        className="character_dicton"
+                      />
+                    </div>
+                    <div className="input-group flex">
+                      <label>Description:</label>
+                      <textarea
+                        value={editedCharacter.description}
+                        onChange={handleInputChange}
+                        className="character__description text-justify"
+                      />
+                    </div>
+                  </div>
                 </div>
               </>
             ) : (
