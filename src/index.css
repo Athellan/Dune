@@ -167,7 +167,7 @@ h1 {
 }
 
 .moreinfo-btn {
-  background-color: rgb(251, 173, 18);
+  background-color: rgb(77, 77, 77);
   padding: 10px;
   color: white;
   font-weight: 600;
@@ -176,6 +176,11 @@ h1 {
   border-color: transparent;
   margin-top: 15px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.moreinfo-btn:hover {
+  background-color: rgb(245, 139, 0);
 }
 
 .reviews {
