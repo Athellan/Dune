@@ -40,7 +40,7 @@ function CharacterInformation() {
       <h1 className="title mb-5 mt-8">Détail du personnage</h1>
       <div className="character-preview">
         <div className="flex flex-col">
-          <img src={editedCharacter.avatar} className="character-image mx-auto" />
+          <img src={editedCharacter.avatar} className="character-image mx-auto mt-5" />
           <div className="character-details">
             {editMode ? (
               <>
