@@ -265,9 +265,6 @@ hr {
     align-items: flex-start;
   }
 }
-
-/* CREATE PAGE */
-/* create new character form */
 .create {
   max-width: 400px;
   margin: 0 auto;
