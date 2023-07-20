@@ -9,7 +9,6 @@ import Character from "./CharacterCard";
 function CharacterDetail() {
   const { id } = useParams();
 
-  // fetch a single character from the API
   const getCharacter = doc(firestore, `characters/${id}`);
 
   const [isLoading, setIsLoading] = useState(false);
@@ -31,7 +30,7 @@ function CharacterDetail() {
       }
     };
     fetchCharacterData;
-  }, []);
+  }, [getCharacter]);
 
   if (isLoading) return <div className="loading"></div>
   return (

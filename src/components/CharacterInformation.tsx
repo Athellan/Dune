@@ -16,11 +16,8 @@ function CharacterInformation() {
   };
 
   const handleSaveClick = () => {
-    // Effectuez ici les actions nécessaires pour enregistrer les modifications
-    // Par exemple, vous pouvez appeler une fonction qui met à jour les informations du personnage dans votre backend
 
     setEditMode(false);
-    // Ajoutez ici le code pour enregistrer les modifications
   };
 
   const handleCancelClick = () => {

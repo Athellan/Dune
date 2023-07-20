@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -5,7 +6,6 @@ function Navbar() {
   const [selectedButton, setSelectedButton] = useState(null);
 
   const handleButtonClick = (buttonName: any) => {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     setSelectedButton(buttonName);
   };
 
