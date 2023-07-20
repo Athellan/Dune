@@ -8,7 +8,8 @@ function CharacterInformation() {
   const location = useLocation();
   const [editMode, setEditMode] = useState(false);
   const [editedCharacter, setEditedCharacter] = useState(location.state.character);
-
+  const [newDescription, setNewDescription] = useState('');
+  // React.Dispatch<React.SetStateAction<string>>
 
   const handleEditClick = () => {
     setEditMode(true);
@@ -76,8 +77,8 @@ function CharacterInformation() {
                     <div className="input-group flex">
                       <label>Description:</label>
                       <textarea
-                        value={editedCharacter.description}
-                        onChange={handleInputChange}
+                        value={newDescription}
+                        onChange={(e) => setNewDescription(e.target.value)}
                         className="character__description text-justify"
                       />
                     </div>
