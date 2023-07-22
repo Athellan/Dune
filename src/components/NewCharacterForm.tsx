@@ -4,13 +4,25 @@ import Select from 'react-select';
 import { mySkills, myTraits } from "../types/data";
 import TagsInput from "react-tagsinput";
 import "react-tagsinput/react-tagsinput.css";
+import { useNavigate } from "react-router-dom";
+import { addCharacter } from "../lib/controller";
 
 function NewCharacterForm() {
 
+  const navigate = useNavigate();
 
+  // form states
+  const [name, setName] = useState("");
+  const [avatarLink, setAvatarLink] = useState('');
+  const [role, setRole] = useState('');
+  const [faction, setFaction] = useState('');
+  const [ambition, setAmbition] = useState('');
+  const [mainSkill, setMainSkill] = useState('');
+  const [secondarySkill, setSecondarySkill] = useState('');
   const [selectedTrait, setSelectedTrait] = useState([]);
   const [selectedSkill, setSelectedSkill] = useState([]);
   const [talent, setTalent] = useState([]);
+  // end form states
 
   const handleTalentChange = (newTalent: any) => {
     setTalent(newTalent);
@@ -26,8 +38,22 @@ function NewCharacterForm() {
 
   const addNewCharacter = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    void addCharacter({
+      name,
+      avatarLink,
+      role,
+      faction,
+      ambition,
+      mainSkill,
+      secondarySkill,
+      selectedTrait,
+      selectedSkill,
+      talent,
+    });
+    navigate("/");
     console.log("addNewCharacter");
   }
+
 
   return (
 
@@ -39,33 +65,32 @@ function NewCharacterForm() {
           <input
             type="text"
             required
-          // value={title}
-          // onChange={(e) => setTitle(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
           <label>Lien de l'avatar :</label>
           <input
             type="text"
             required
-          // value={location}
-          // onChange={(e) => setLocation(e.target.value)}
+            value={avatarLink}
+            onChange={(e) => setAvatarLink(e.target.value)}
           />
           <label>Maison :</label>
           <input
             disabled
             value="Vesperia"
-          // onChange={(e) => setDescription(e.target.value)}
           ></input>
           <label>Role :</label>
           <input
             required
-          // value={description}
-          // onChange={(e) => setDescription(e.target.value)}
+            value={role}
+            onChange={(e) => setRole(e.target.value)}
           ></input>
           <label>Faction :</label>
           <input
             required
-          // value={description}
-          // onChange={(e) => setDescription(e.target.value)}
+            value={faction}
+            onChange={(e) => setFaction(e.target.value)}
           ></input>
           <label className="mb-2">Traits de personnalité:</label>
           <Select
@@ -78,33 +103,23 @@ function NewCharacterForm() {
           <label>Ambition :</label>
           <input
             required
-          // value={description}
-          // onChange={(e) => setDescription(e.target.value)}
+            value={ambition}
+            onChange={(e) => setAmbition(e.target.value)}
           ></input>
           <label>Compétence Principale :</label>
           <input
             type="text"
             required
-          // value={country}
-          // onChange={(e) => setCountry(e.target.value)}
+            value={mainSkill}
+            onChange={(e) => setMainSkill(e.target.value)}
           />
           <label>Compétence Secondaire :</label>
           <input
             type="text"
             required
-          // value={region}
-          // onChange={(e) => setRegion(e.target.value)}
+            value={secondarySkill}
+            onChange={(e) => setSecondarySkill(e.target.value)}
           />
-
-          {/* <label>Number of Reviews:</label>
-          <input
-            type="number"
-            required
-            min="1"
-            max="1000"
-            value={review}
-            onChange={(e) => setReview(e.target.value)}
-          /> */}
           <label className="mb-2">Compétence Annexes (max 4) :</label>
           <Select
             className="mb-2"

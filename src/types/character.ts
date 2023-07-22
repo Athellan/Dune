@@ -6,3 +6,16 @@ export interface NewCharacter {
     description?: string
     dicton?: string
 }
+
+export interface AddCharacter {
+    name: string
+    avatarLink: string
+    role: string
+    faction: string
+    ambition: string
+    mainSkill: string
+    secondarySkill: string
+    selectedTrait: string[]
+    selectedSkill: string[]
+    talent: string[]
+}

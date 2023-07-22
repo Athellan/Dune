@@ -10,7 +10,7 @@ interface IProps {
 
 function Character({ character }: IProps) {
   return (
-    <div className="character-preview">
+    <div className="character-preview !my-10">
       <div className="flex">
         <img src={character.avatar} className="character-image" />
         <div className="">

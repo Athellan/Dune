@@ -33,7 +33,7 @@ export const myTraits = [
 
 export const mySkills = [
     { label: 'Analyse de données', value: 1 },
-    { label: 'botanique', value: 2 },
+    { label: 'Botanique', value: 2 },
     { label: 'Bureaucratie du CHOM', value: 3 },
     { label: 'Chirurgie', value: 4 },
     { label: 'Contrebande', value: 5 },
