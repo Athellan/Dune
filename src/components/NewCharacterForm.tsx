@@ -13,7 +13,7 @@ function NewCharacterForm() {
 
   // form states
   const [name, setName] = useState("");
-  const [avatarLink, setAvatarLink] = useState('');
+  const [avatar, setAvatar] = useState('');
   const [role, setRole] = useState('');
   const [faction, setFaction] = useState('');
   const [ambition, setAmbition] = useState('');
@@ -22,6 +22,7 @@ function NewCharacterForm() {
   const [selectedTrait, setSelectedTrait] = useState([]);
   const [selectedSkill, setSelectedSkill] = useState([]);
   const [talent, setTalent] = useState([]);
+  const [description, setDescritpion] = useState("");
   // end form states
 
   const handleTalentChange = (newTalent: any) => {
@@ -40,7 +41,7 @@ function NewCharacterForm() {
     e.preventDefault();
     void addCharacter({
       name,
-      avatarLink,
+      avatar,
       role,
       faction,
       ambition,
@@ -49,6 +50,7 @@ function NewCharacterForm() {
       selectedTrait,
       selectedSkill,
       talent,
+      description
     });
     navigate("/");
     console.log("addNewCharacter");
@@ -72,14 +74,26 @@ function NewCharacterForm() {
           <input
             type="text"
             required
-            value={avatarLink}
-            onChange={(e) => setAvatarLink(e.target.value)}
+            value={avatar}
+            onChange={(e) => setAvatar(e.target.value)}
           />
           <label>Maison :</label>
           <input
             disabled
             value="Vesperia"
           ></input>
+          <label>
+            Description :
+          </label>
+          <textarea
+            id="description"
+            maxLength={682}
+            required
+            value={description}
+            onChange={(e) => setDescritpion(e.target.value)}
+            className="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+            rows={5}
+          />
           <label>Role :</label>
           <input
             required

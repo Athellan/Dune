@@ -9,7 +9,7 @@ export interface NewCharacter {
 
 export interface AddCharacter {
     name: string
-    avatarLink: string
+    avatar: string
     role: string
     faction: string
     ambition: string
@@ -18,4 +18,5 @@ export interface AddCharacter {
     selectedTrait: string[]
     selectedSkill: string[]
     talent: string[]
+    description: string
 }
