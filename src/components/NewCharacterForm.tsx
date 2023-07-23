@@ -156,26 +156,3 @@ function NewCharacterForm() {
 }
 
 export default NewCharacterForm;
-{/* <label>Dropdown</label>
-          <select >
-            <option value="Room Only">Room Only</option>
-            <option value="Room with Breakfast included">
-              Room with Breakfast included
-            </option>
-            <option value="Local Charges Payable at Hotel">
-              Local Charges Payable at Hotel
-            </option>
-            <option value="Free Parking for all guests">
-              Free Parking for all guests
-            </option>
-            <option value="Free WiFi">Free WiFi</option>
-            <option value="Spa and wellness centre included">
-              Spa and wellness centre included
-            </option>
-            <option value="Private parking at the hotel">
-              Private parking at the hotel
-            </option>
-            <option value="Restaurant & Bar">Restaurant & Bar</option>
-            <option value="Swimming pool">Swimming pool</option>
-            <option value="Room and Parking">Room and Parking</option>
-          </select> */}
