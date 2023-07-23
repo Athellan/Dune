@@ -2,11 +2,11 @@ import { onSnapshot } from "firebase/firestore";
 import { charactersCollection } from "../lib/controller";
 import { useEffect, useState } from "react";
 import { DocumentData, QuerySnapshot } from "firebase/firestore/lite";
-import { Newcharacter } from "../types/character";
-import Character from "./Character";
+import { NewCharacter } from "../types/character";
+import Character from "./CharacterCard";
 
-function Card() {
-  const [characters, setCharacters] = useState<Newcharacter[]>([]);
+function CharacterList() {
+  const [characters, setCharacters] = useState<NewCharacter[]>([]);
 
   useEffect(
     () =>
@@ -37,4 +37,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default CharacterList;
