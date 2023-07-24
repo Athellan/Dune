@@ -4,6 +4,8 @@ import NewCharacterForm from "./components/NewCharacterForm";
 import NotFound from "./components/NotFound";
 import CharacterList from "./components/CharacterList";
 import CharacterInformation from "./components/CharacterInformation";
+import React from "react";
+const Search = React.lazy(() => import('./components/Search'));
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Route path="/character/:id" element={<CharacterInformation />} />
       <Route path="/*" element={<NotFound />} />
       <Route path="/" element={<CharacterList />} />
+      <Route path="/search" element={<Search />} />
     </Routes>
   );
 }
