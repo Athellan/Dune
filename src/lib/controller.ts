@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import { addDoc, collection, deleteDoc, doc, getFirestore, setDoc, updateDoc } from "firebase/firestore";
+import { addDoc, collection, deleteDoc, doc, getFirestore, setDoc } from "firebase/firestore";
 import { app } from "./firebase";
 import { AddCharacter } from "../types/character";
 import { NavigateFunction } from "react-router-dom";

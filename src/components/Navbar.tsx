@@ -36,6 +36,18 @@ function Navbar() {
         >
           Nouveau Personnage
         </Link>
+        <Link
+          style={{
+            color: selectedButton === "search" ? "white" : "rgb(77, 77, 77)",
+            backgroundColor:
+              selectedButton === "search" ? "rgb(77, 77, 77)" : "transparent",
+            borderRadius: "8px",
+          }}
+          to="/search"
+          onClick={() => handleButtonClick("search")}
+        >
+          Recherche
+        </Link>
       </div>
     </div>
   );
