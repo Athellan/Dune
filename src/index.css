@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* APP */
 body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(242, 245, 247);
+  background-color: rgb(207, 210, 212);
 }
 
 code {
@@ -21,10 +22,11 @@ code {
 
 p {
   margin: 0;
+  font-size: small;
 }
 
 h1 {
-  color: rgb(251, 173, 18);
+  color: rgb(50, 51, 52);
   font-weight: 700;
   font-size: 30px;
   margin: 0px;
@@ -38,9 +40,11 @@ h1 {
   margin: 0 auto;
   border-bottom: 2px solid rgb(77, 77, 77);
 }
+
 .navbar h1 {
   color: rgb(77, 77, 77);
 }
+
 .navbar .links {
   margin-left: auto;
   color: rgb(77, 77, 77);
@@ -51,6 +55,7 @@ h1 {
   text-decoration: none;
   padding: 6px;
 }
+
 .navbar a:hover {
   color: rgb(77, 77, 77);
 }
@@ -65,29 +70,29 @@ h1 {
   animation: spin 2s linear infinite;
   margin: 10px auto;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
-
 /* HOMEPAGE */
 .character-image {
   border-radius: 16px;
-  width: 40%;
+  width: 360px;
+  height: 360px;
 }
-
-
 .character-list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
+
 .character-preview {
   padding: 10px;
   width: 80%;
@@ -102,13 +107,19 @@ h1 {
 
 .character-preview h2 {
   font-size: 20px;
-  margin: 0px;
+  margin-top: 15px;
 }
 
 .character-preview h3 {
   font-size: 16px;
   font-style: italic;
-  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.character-preview p {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .title {
@@ -154,7 +165,7 @@ h1 {
 }
 
 .moreinfo-btn {
-  background-color: rgb(251, 173, 18);
+  background-color: rgb(77, 77, 77);
   padding: 10px;
   color: white;
   font-weight: 600;
@@ -163,22 +174,12 @@ h1 {
   border-color: transparent;
   margin-top: 15px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.reviews {
-  color: rgb(251, 173, 18);
-  margin-bottom: 5px;
-  font-weight: 600;
+.moreinfo-btn:hover {
+  background-color: rgb(245, 139, 0);
 }
-
-.review-number {
-  background-color: rgb(77, 77, 77);
-  padding: 8px;
-  color: white;
-  margin-right: 7px;
-  border-radius: 4px;
-}
-
 .feature {
   color: rgb(77, 77, 77);
   font-size: 1rem;
@@ -188,10 +189,6 @@ h1 {
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.no-characters {
-  padding: 10px;
 }
 
 .edit {
@@ -223,6 +220,7 @@ hr {
     padding-left: 10px;
     font-size: 20px;
   }
+
   .navbar {
     padding: 15px;
     display: flex;
@@ -230,36 +228,39 @@ hr {
     margin: 0 auto;
     border-bottom: 2px solid rgb(77, 77, 77);
   }
+
   .navbar h1 {
     font-size: 20px;
   }
+
   .character-preview {
     width: 90%;
     margin: 20px 0;
     border-bottom: 1px solid #fafafa;
   }
+
   .highlights {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-
-/* CREATE PAGE */
-/* create new character form */
 .create {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
+
 .create label {
   text-align: left;
   display: block;
 }
+
 .create h2 {
   font-size: 20px;
   color: rgb(77, 77, 77);
   margin-bottom: 30px;
 }
+
 .create input,
 .create textarea,
 .create select {
@@ -270,6 +271,7 @@ hr {
   box-sizing: border-box;
   display: block;
 }
+
 .create button {
   background: rgb(77, 77, 77);
   color: #fff;
@@ -284,6 +286,7 @@ hr {
   place-items: center;
   margin-top: 20px;
 }
+
 .character-details button {
   background: rgb(77, 77, 77);
   color: #fff;
@@ -402,12 +405,12 @@ hr {
   width: 80vw;
 }
 
-.search__title > a {
+.search__title>a {
   cursor: pointer;
   text-decoration: none;
 }
 
-.search__title > a {
+.search__title>a {
   cursor: pointer;
   text-decoration: none;
 }
