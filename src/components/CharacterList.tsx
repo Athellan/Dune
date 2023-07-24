@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { onSnapshot } from "firebase/firestore";
 import { charactersCollection } from "../lib/controller";
 import { useEffect, useState } from "react";

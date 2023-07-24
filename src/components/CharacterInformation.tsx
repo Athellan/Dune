@@ -3,6 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { updateCharacter } from "../lib/controller";
