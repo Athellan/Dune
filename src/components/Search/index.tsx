@@ -57,7 +57,7 @@ const Search: React.FC = () => {
                 </button>
             </div>
             <div>
-                {filteredCharacters.length ? (
+                {filteredCharacters.length > 0 ? (
                     filteredCharacters.map((character) => (
                         <div className="search__title" key={character.id}>
                             <Link to={`/character/${character.id}`} state={{ character: character }}>
@@ -65,7 +65,6 @@ const Search: React.FC = () => {
                             </Link>
                         </div>
                     ))
-
                 ) : (
                     <h1>Aucun personnage trouvé</h1>
                 )}
