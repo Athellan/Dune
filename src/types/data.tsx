@@ -45,7 +45,7 @@ export const mySkills = [
     { label: 'Kanly', value: 11 },
     { label: 'Langage corporel', value: 12 },
     { label: 'Maladies infectieuses', value: 13 },
-    { label: `Médecine d'urgence'`, value: 14 },
+    { label: `Médecine d'urgence`, value: 14 },
     { label: 'Philosophie', value: 15 },
     { label: 'Physique', value: 16, },
     { label: 'Pièges', value: 17 },
