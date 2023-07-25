@@ -60,7 +60,7 @@ function NewCharacterForm() {
   return (
 
     <div className="card">
-      <h1 className="mb-8">Création de ton personnage</h1>
+      <h1 className="mt-8 mb-8">Création de ton personnage</h1>
       <div className="create">
         <form onSubmit={(e) => addNewCharacter(e)}>
           <label>Nom du Personnage :</label>

@@ -14,7 +14,7 @@ function Navbar() {
       <div className="links">
         <Link
           style={{
-            color: selectedButton === "liste" ? "white" : "rgb(77, 77, 77)",
+            color: selectedButton === "liste" ? "white" : "white",
             backgroundColor:
               selectedButton === "liste" ? "rgb(77, 77, 77)" : "transparent",
             borderRadius: "8px",
@@ -26,7 +26,7 @@ function Navbar() {
         </Link>
         <Link
           style={{
-            color: selectedButton === "nouveau" ? "white" : "rgb(77, 77, 77)",
+            color: selectedButton === "nouveau" ? "white" : "white",
             backgroundColor:
               selectedButton === "nouveau" ? "rgb(77, 77, 77)" : "transparent",
             borderRadius: "8px",
@@ -38,7 +38,7 @@ function Navbar() {
         </Link>
         <Link
           style={{
-            color: selectedButton === "search" ? "white" : "rgb(77, 77, 77)",
+            color: selectedButton === "search" ? "white" : "white",
             backgroundColor:
               selectedButton === "search" ? "rgb(77, 77, 77)" : "transparent",
             borderRadius: "8px",
