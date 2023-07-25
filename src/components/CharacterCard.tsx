@@ -17,20 +17,20 @@ function Character({ character }: IProps) {
 
   const navigate = useNavigate();
   return (
-    <div className="character-preview !my-10" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+    <div className="character-preview !my-10">
       <div className="flex">
         <img src={character.avatar} className="character-image" />
         <div className="">
-          <h2 className="character__name font-bold">{character.name}</h2>
-          <h3 className="character__role">{character.role}</h3>
-          <h4 className="character_dicton ml-2 mb-5">"{character.dicton}"</h4>
-          <p className="character__description text-justify">{character.description}</p>
+          <h2 className="font-bold">{character.name}</h2>
+          <h3 className="">{character.role}</h3>
+          <h4 className="">"{character.dicton}"</h4>
+          <p className="text-justify">{character.description}</p>
         </div>
       </div>
       <div className="flex justify-between">
         <div className="">
           <Link to={`/character/${character.id}`} state={{ character: character }}>
-            <button className="moreinfo-btn ml-32 mt-10 font-bold">
+            <button className="moreinfo-btn ml-28 mt-10 font-bold">
               En savoir plus
             </button>
           </Link>
@@ -38,7 +38,7 @@ function Character({ character }: IProps) {
         <div className="">
           <button
             onClick={() => deleteCharacter(character.id, navigate)}
-            className="inline-block mt-4 px-3 py-1 text-white font-bold bg-red-500 rounded-lg hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-300"
+            className="inline-block mt-5 px-2 py-1 text-white font-bold bg-red-500 rounded-lg hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-300"
           >
             Supprimer
           </button>

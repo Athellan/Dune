@@ -77,11 +77,6 @@ function NewCharacterForm() {
             value={avatar}
             onChange={(e) => setAvatar(e.target.value)}
           />
-          <label>Maison :</label>
-          <input
-            disabled
-            value="Vesperia"
-          ></input>
           <label>
             Description :
           </label>
@@ -108,6 +103,7 @@ function NewCharacterForm() {
           ></input>
           <label className="mb-2">Traits de personnalité:</label>
           <Select
+            placeholder="Choisis tes traits de personnalité"
             className="mb-2"
             options={myTraits}
             isMulti
@@ -136,6 +132,7 @@ function NewCharacterForm() {
           />
           <label className="mb-2">Compétence Annexes (max 4) :</label>
           <Select
+            placeholder="Choisis tes compétences annexes"
             className="mb-2"
             options={mySkills}
             isMulti
