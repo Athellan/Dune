@@ -11,7 +11,6 @@ function NewCharacterForm() {
 
   const navigate = useNavigate();
 
-  // form states
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState('');
   const [role, setRole] = useState('');
@@ -23,7 +22,6 @@ function NewCharacterForm() {
   const [selectedSkill, setSelectedSkill] = useState([]);
   const [talent, setTalent] = useState([]);
   const [description, setDescritpion] = useState("");
-  // end form states
 
   const handleTalentChange = (newTalent: any) => {
     setTalent(newTalent);
