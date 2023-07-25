@@ -42,7 +42,7 @@ const Search: React.FC = () => {
 
     return (
         <div className="search__page">
-            <div className="search !w-3/4">
+            <div className="search !w-1/4">
                 <input
                     type="text"
                     className="inputsearch"

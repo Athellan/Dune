@@ -100,7 +100,7 @@ h1 {
 
 .character-preview {
   padding: 10px;
-  width: 80%;
+  width: 100vh;
   margin: 0 auto;
   border-radius: 16px;
   background-color: white;
