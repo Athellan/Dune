@@ -7,6 +7,7 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { updateCharacter } from "../lib/controller";
+import { Button } from "@chakra-ui/react";
 
 function CharacterInformation() {
 
@@ -105,14 +106,14 @@ function CharacterInformation() {
           </div>
         </div>
         {!editMode && (
-          <strong className="edit-text" onClick={handleEditClick}>
+          <Button colorScheme='blue' onClick={handleEditClick}>
             Modifier les informations
-          </strong>
+          </Button>
         )}
         {editMode && (
-          <div>
-            <button className="moreinfo-btn mr-10" onClick={handleSaveClick}>Enregistrer</button>
-            <button className="moreinfo-btn" onClick={handleCancelClick}>Annuler</button>
+          <div className="space-x-3">
+            <Button colorScheme='blue' onClick={handleSaveClick}>Enregistrer</Button>
+            <Button colorScheme='blue' onClick={handleCancelClick}>Annuler</Button>
           </div>
         )}
       </div>
