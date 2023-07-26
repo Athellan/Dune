@@ -287,8 +287,6 @@ hr {
 }
 
 .create button {
-  background: rgb(77, 77, 77);
-  color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
@@ -338,8 +336,6 @@ hr {
 }
 
 .search__page button {
-  background: rgb(77, 77, 77);
-  color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;

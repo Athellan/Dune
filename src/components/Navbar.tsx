@@ -16,7 +16,7 @@ function Navbar() {
           style={{
             color: selectedButton === "liste" ? "white" : "white",
             backgroundColor:
-              selectedButton === "liste" ? "rgb(77, 77, 77)" : "transparent",
+              selectedButton === "liste" ? "rgba(48, 130, 206, 255)" : "transparent",
             borderRadius: "8px",
           }}
           to="/"
@@ -28,7 +28,7 @@ function Navbar() {
           style={{
             color: selectedButton === "nouveau" ? "white" : "white",
             backgroundColor:
-              selectedButton === "nouveau" ? "rgb(77, 77, 77)" : "transparent",
+              selectedButton === "nouveau" ? "rgba(48, 130, 206, 255)" : "transparent",
             borderRadius: "8px",
           }}
           to="/newcharacter"
@@ -40,7 +40,7 @@ function Navbar() {
           style={{
             color: selectedButton === "search" ? "white" : "white",
             backgroundColor:
-              selectedButton === "search" ? "rgb(77, 77, 77)" : "transparent",
+              selectedButton === "search" ? "rgba(48, 130, 206, 255)" : "transparent",
             borderRadius: "8px",
           }}
           to="/search"

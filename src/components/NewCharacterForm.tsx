@@ -6,6 +6,7 @@ import TagsInput from "react-tagsinput";
 import "react-tagsinput/react-tagsinput.css";
 import { useNavigate } from "react-router-dom";
 import { addCharacter } from "../lib/controller";
+import { Button, Input, Textarea } from "@chakra-ui/react";
 
 function NewCharacterForm() {
 
@@ -62,14 +63,16 @@ function NewCharacterForm() {
       <div className="create">
         <form onSubmit={(e) => addNewCharacter(e)}>
           <label>Nom du Personnage :</label>
-          <input
+          <Input
+            bg='white'
             type="text"
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <label>Lien de l'avatar :</label>
-          <input
+          <Input
+            bg='white'
             type="text"
             required
             value={avatar}
@@ -78,7 +81,8 @@ function NewCharacterForm() {
           <label>
             Description :
           </label>
-          <textarea
+          <Textarea
+            bg='white'
             id="description"
             maxLength={682}
             required
@@ -88,17 +92,19 @@ function NewCharacterForm() {
             rows={5}
           />
           <label>Role :</label>
-          <input
+          <Input
+            bg='white'
             required
             value={role}
             onChange={(e) => setRole(e.target.value)}
-          ></input>
+          />
           <label>Faction :</label>
-          <input
+          <Input
+            bg='white'
             required
             value={faction}
             onChange={(e) => setFaction(e.target.value)}
-          ></input>
+          />
           <label className="mb-2">Traits de personnalité:</label>
           <Select
             placeholder="Choisis tes traits de personnalité"
@@ -109,20 +115,23 @@ function NewCharacterForm() {
             value={selectedTrait}
           />
           <label>Ambition :</label>
-          <input
+          <Input
+            bg='white'
             required
             value={ambition}
             onChange={(e) => setAmbition(e.target.value)}
-          ></input>
+          />
           <label>Compétence Principale :</label>
-          <input
+          <Input
+            bg='white'
             type="text"
             required
             value={mainSkill}
             onChange={(e) => setMainSkill(e.target.value)}
           />
           <label>Compétence Secondaire :</label>
-          <input
+          <Input
+            bg='white'
             type="text"
             required
             value={secondarySkill}
@@ -143,7 +152,7 @@ function NewCharacterForm() {
             value={talent}
             onChange={handleTalentChange}
           />
-          <button className="moreinfo-btn">Sauvegarder</button>
+          <Button className="mt-3" colorScheme='blue'>Sauvegarder</Button>
         </form>
       </div>
     </div >
