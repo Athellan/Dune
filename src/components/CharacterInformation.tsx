@@ -45,7 +45,6 @@ function CharacterInformation() {
     setEditedCharacter(location.state.character);
   };
 
-
   return (
     <>
       <h1 className="title mb-5 mt-8">Détails du personnage</h1>
