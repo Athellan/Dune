@@ -25,24 +25,23 @@ function Character({ character }: IProps) {
         overflow='hidden'
         variant='outline'
         borderRadius='lg'
-        h="400px"
-        w="1000px"
         padding="5px"
       >
         <Image
           src={character.avatar}
           borderRadius='lg'
+          boxSize='500px'
         />
         <Stack>
           <CardBody>
             <Heading className="mb-3" size='2xl'>{character.name}</Heading>
-            <Text className="mb-3" color='blue.600' fontSize='md'>
+            <Text className="mb-3" fontSize='2xl'>
               {character.role}
             </Text>
-            <Text className="mb-3">
+            <Text className="mb-5" fontSize='medium'>
               "{character.dicton}"
             </Text>
-            <Text maxW="md" >
+            <Text className="ml-12" maxW="md" style={{ textAlign: 'justify' }}>
               {character.description}
             </Text>
           </CardBody>

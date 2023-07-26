@@ -152,6 +152,7 @@ function NewCharacterForm() {
             value={talent}
             onChange={handleTalentChange}
           />
+
           <Button className="mt-3" colorScheme='blue'>Sauvegarder</Button>
         </form>
       </div>

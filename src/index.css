@@ -271,7 +271,7 @@ hr {
   margin-bottom: 30px;
 }
 
-.create input,
+search__title.create input,
 .create textarea,
 .create select {
   width: 100%;
