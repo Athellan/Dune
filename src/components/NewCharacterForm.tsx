@@ -6,7 +6,7 @@ import TagsInput from "react-tagsinput";
 import "react-tagsinput/react-tagsinput.css";
 import { useNavigate } from "react-router-dom";
 import { addCharacter } from "../lib/controller";
-import { Box, Button, Grid, GridItem, Input, Textarea } from "@chakra-ui/react";
+import { Box, Button, Grid, Input, Textarea } from "@chakra-ui/react";
 
 function NewCharacterForm() {
 
@@ -152,24 +152,20 @@ function NewCharacterForm() {
             value={talent}
             onChange={handleTalentChange}
           />
+          {/* Box Principes */}
           <Box border="1px solid white" p={4} borderRadius="md">
             <Grid templateColumns='repeat(3, 1fr)' gap={2}>
               <div>
-                <label style={{ textAlign: 'center' }}>
-                  Principe
-                </label>
-                <Input w='100%' h='10' bg='white' />
+                <label style={{ textAlign: 'center', fontSize: '30px' }}>Principe</label>
               </div>
               <div>
-                <label style={{ textAlign: 'center' }}>Points</label>
-                <Input w='100%' h='10' bg='white' />
+                <label style={{ textAlign: 'center', fontSize: '30px' }}>Points</label>
               </div>
               <div>
-                <label style={{ textAlign: 'center' }}>Maxime</label>
-                <Input w='100%' h='10' bg='white' />
+                <label style={{ textAlign: 'center', fontSize: '30px' }}>Maxime</label>
               </div>
               <div>
-                <label style={{ textAlign: 'center' }}>Devoir</label>
+                <label style={{ textAlign: 'left' }}>Devoir</label>
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
@@ -181,7 +177,7 @@ function NewCharacterForm() {
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
-                <label className="mb-2" style={{ textAlign: 'center' }}>Domination</label>
+                <label>Domination</label>
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
@@ -193,7 +189,7 @@ function NewCharacterForm() {
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
-                <label className="mb-2" style={{ textAlign: 'center' }}>Foi</label>
+                <label>Foi</label>
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
@@ -205,7 +201,7 @@ function NewCharacterForm() {
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
-                <label className="mb-2" style={{ textAlign: 'center' }}>Justice</label>
+                <label>Justice</label>
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
@@ -217,7 +213,7 @@ function NewCharacterForm() {
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
-                <label className="mb-2" style={{ textAlign: 'center' }}>vérité</label>
+                <label>vérité</label>
                 <Input w='100%' h='10' bg='white' />
               </div>
               <div>
@@ -230,6 +226,7 @@ function NewCharacterForm() {
               </div>
             </Grid>
           </Box>
+          {/* End Box Principes */}
 
           <Button className="mt-3" colorScheme='blue'>Sauvegarder</Button>
         </form>

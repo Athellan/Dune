@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.js";
-import "./index.css";
-import { BrowserRouter } from "react-router-dom";
+import "./App.css";
 import Navbar from "./components/Navbar.js";
+import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider, CSSReset } from "@chakra-ui/react";
 import { Global, css } from "@emotion/react";
 
