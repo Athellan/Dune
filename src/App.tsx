@@ -5,7 +5,6 @@ import NotFound from "./components/NotFound";
 import CharacterList from "./components/CharacterList";
 import CharacterInformation from "./components/CharacterInformation";
 import Search from "./components/Search";
-// const Search = React.lazy(() => import('./components/Search'));
 
 function App() {
   return (

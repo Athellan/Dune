@@ -6,7 +6,7 @@ import TagsInput from "react-tagsinput";
 import "react-tagsinput/react-tagsinput.css";
 import { useNavigate } from "react-router-dom";
 import { addCharacter } from "../lib/controller";
-import { Button, Input, Textarea } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Input, Textarea } from "@chakra-ui/react";
 
 function NewCharacterForm() {
 
@@ -58,9 +58,9 @@ function NewCharacterForm() {
 
   return (
 
-    <div className="card">
+    <div className="card width=150%">
       <h1 className="mt-8 mb-8">Création de ton personnage</h1>
-      <div className="create">
+      <div className="form">
         <form onSubmit={(e) => addNewCharacter(e)}>
           <label>Nom du Personnage :</label>
           <Input
@@ -152,6 +152,84 @@ function NewCharacterForm() {
             value={talent}
             onChange={handleTalentChange}
           />
+          <Box border="1px solid white" p={4} borderRadius="md">
+            <Grid templateColumns='repeat(3, 1fr)' gap={2}>
+              <div>
+                <label style={{ textAlign: 'center' }}>
+                  Principe
+                </label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ textAlign: 'center' }}>Points</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ textAlign: 'center' }}>Maxime</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ textAlign: 'center' }}>Devoir</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label className="mb-2" style={{ textAlign: 'center' }}>Domination</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label className="mb-2" style={{ textAlign: 'center' }}>Foi</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label className="mb-2" style={{ textAlign: 'center' }}>Justice</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label className="mb-2" style={{ textAlign: 'center' }}>vérité</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+            </Grid>
+          </Box>
 
           <Button className="mt-3" colorScheme='blue'>Sauvegarder</Button>
         </form>
