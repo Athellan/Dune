@@ -243,18 +243,13 @@ hr {
   text-align: center;
 }
 
-.create label {
-  text-align: left;
-  display: block;
-}
-
 .form h2 {
   font-size: 20px;
   color: rgb(248, 246, 246);
   margin-bottom: 30px;
 }
 
-search__title.form input,
+/* search__title.form input,
 .form textarea,
 .form select {
   width: 100%;
@@ -263,7 +258,7 @@ search__title.form input,
   border: 1px solid #020202;
   box-sizing: border-box;
   display: block;
-}
+} */
 
 .form label {
   color: #fff;

@@ -62,8 +62,9 @@ function NewCharacterForm() {
       <h1 className="mt-8 mb-8">Création de ton personnage</h1>
       <div className="form">
         <form onSubmit={(e) => addNewCharacter(e)}>
-          <label>Nom du Personnage :</label>
+          <label className="mb-2">Nom du Personnage :</label>
           <Input
+            className="mb-5"
             bg='white'
             type="text"
             required
@@ -72,15 +73,14 @@ function NewCharacterForm() {
           />
           <label>Lien de l'avatar :</label>
           <Input
+            className="mb-5"
             bg='white'
             type="text"
             required
             value={avatar}
             onChange={(e) => setAvatar(e.target.value)}
           />
-          <label>
-            Description :
-          </label>
+          <label>Description :</label>
           <Textarea
             bg='white'
             id="description"
@@ -88,11 +88,12 @@ function NewCharacterForm() {
             required
             value={description}
             onChange={(e) => setDescritpion(e.target.value)}
-            className="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+            className="w-full mb-5 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
             rows={5}
           />
           <label>Role :</label>
           <Input
+            className="mb-5"
             bg='white'
             required
             value={role}
@@ -100,6 +101,7 @@ function NewCharacterForm() {
           />
           <label>Faction :</label>
           <Input
+            className="mb-5"
             bg='white'
             required
             value={faction}
@@ -108,7 +110,7 @@ function NewCharacterForm() {
           <label className="mb-2">Traits de personnalité:</label>
           <Select
             placeholder="Choisis tes traits de personnalité"
-            className="mb-2"
+            className="mb-5"
             options={myTraits}
             isMulti
             onChange={handleTraitChange}
@@ -116,6 +118,7 @@ function NewCharacterForm() {
           />
           <label>Ambition :</label>
           <Input
+            className="mb-5"
             bg='white'
             required
             value={ambition}
@@ -123,6 +126,7 @@ function NewCharacterForm() {
           />
           <label>Compétence Principale :</label>
           <Input
+            className="mb-5"
             bg='white'
             type="text"
             required
@@ -131,6 +135,7 @@ function NewCharacterForm() {
           />
           <label>Compétence Secondaire :</label>
           <Input
+            className="mb-5"
             bg='white'
             type="text"
             required
@@ -140,7 +145,7 @@ function NewCharacterForm() {
           <label className="mb-2">Compétence Annexes (max 4) :</label>
           <Select
             placeholder="Choisis tes compétences annexes"
-            className="mb-2"
+            className="mb-5"
             options={mySkills}
             isMulti
             onChange={handleSkillChange}
@@ -148,12 +153,12 @@ function NewCharacterForm() {
           />
           <label className="mb-2">Talents :</label>
           <TagsInput
-            className="p-2 mb-2 bg-white w-full border !border-gray-300 rounded block !text-black !font-medium"
+            className="mb-5 bg-white w-full border !border-gray-300 rounded block !text-black !font-medium"
             value={talent}
             onChange={handleTalentChange}
           />
           {/* Box Principes */}
-          <Box border="1px solid white" p={4} borderRadius="md">
+          <Box border="1px solid white" p={4} borderRadius="md" className="mb-5">
             <Grid templateColumns='repeat(3, 1fr)' gap={2}>
               <div>
                 <label style={{ textAlign: 'center', fontSize: '30px' }}>Principe</label>
@@ -227,6 +232,83 @@ function NewCharacterForm() {
             </Grid>
           </Box>
           {/* End Box Principes */}
+
+          {/* Box Specialisations */}
+          <Box border="1px solid white" p={4} borderRadius="md" className="mb-5">
+            <Grid templateColumns='repeat(3, 1fr)' gap={2}>
+              <div>
+                <label style={{ textAlign: 'center', fontSize: '30px' }}>Compétence</label>
+              </div>
+              <div>
+                <label style={{ textAlign: 'center', fontSize: '30px' }}>Points</label>
+              </div>
+              <div>
+                <label style={{ textAlign: 'center', fontSize: '30px' }}>Spécialisations</label>
+              </div>
+              <div>
+                <label style={{ textAlign: 'left' }}>Analyse</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label>Combat</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label>Discipline</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label>Mobilité</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label>Rhétorique</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>.</label>
+                <Input w='100%' h='10' bg='white' />
+              </div>
+            </Grid>
+          </Box>
+          {/* End Box Specialisations */}
+
 
           <Button className="mt-3" colorScheme='blue'>Sauvegarder</Button>
         </form>
