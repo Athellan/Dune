@@ -153,7 +153,7 @@ function NewCharacterForm() {
           />
           <label className="mb-2">Talents :</label>
           <TagsInput
-            className="mb-5 bg-white w-full border !border-gray-300 rounded block !text-black !font-medium"
+            className="mb-16 bg-white w-full border !border-gray-300 rounded block !text-black !font-medium"
             value={talent}
             onChange={handleTalentChange}
           />
