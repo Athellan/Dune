@@ -25,7 +25,7 @@ function Character({ character }: IProps) {
         overflow='hidden'
         variant='outline'
         borderRadius='lg'
-        padding="5px"
+        padding="6"
       >
         <Image
           src={character.avatar}
