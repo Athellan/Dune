@@ -171,63 +171,63 @@ function NewCharacterForm() {
               </div>
               <div>
                 <label style={{ textAlign: 'left' }}>Devoir</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
               <div>
                 <label>Domination</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
               <div>
                 <label>Foi</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
               <div>
                 <label>Justice</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
               <div>
-                <label>vérité</label>
-                <Input w='100%' h='10' bg='white' />
+                <label>Vérité</label>
+                <Input w='100%' h='10' bg='white' placeholder="1" />
+              </div>
+              <div>
+                <label style={{ color: 'transparent' }}>1</label>
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
-              </div>
-              <div>
-                <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
             </Grid>
           </Box>
@@ -247,63 +247,63 @@ function NewCharacterForm() {
               </div>
               <div>
                 <label style={{ textAlign: 'left' }}>Analyse</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
               <div>
                 <label>Combat</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
               <div>
                 <label>Discipline</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
               <div>
                 <label>Mobilité</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
               <div>
                 <label>Rhétorique</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="1" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="2" />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' />
+                <Input w='100%' h='10' bg='white' placeholder="3" />
               </div>
             </Grid>
           </Box>
