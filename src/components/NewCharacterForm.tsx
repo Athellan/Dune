@@ -247,63 +247,63 @@ function NewCharacterForm() {
               </div>
               <div>
                 <label style={{ textAlign: 'left' }}>Analyse</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" />
+                <Input w='100%' h='10' bg='white' placeholder="1" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" />
+                <Input w='100%' h='10' bg='white' placeholder="2" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" />
+                <Input w='100%' h='10' bg='white' placeholder="3" required />
               </div>
               <div>
                 <label>Combat</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" />
+                <Input w='100%' h='10' bg='white' placeholder="1" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" />
+                <Input w='100%' h='10' bg='white' placeholder="2" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" />
+                <Input w='100%' h='10' bg='white' placeholder="3" required />
               </div>
               <div>
                 <label>Discipline</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" />
+                <Input w='100%' h='10' bg='white' placeholder="1" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" />
+                <Input w='100%' h='10' bg='white' placeholder="2" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" />
+                <Input w='100%' h='10' bg='white' placeholder="3" required />
               </div>
               <div>
                 <label>Mobilité</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" />
+                <Input w='100%' h='10' bg='white' placeholder="1" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" />
+                <Input w='100%' h='10' bg='white' placeholder="2" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" />
+                <Input w='100%' h='10' bg='white' placeholder="3" required />
               </div>
               <div>
                 <label>Rhétorique</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" />
+                <Input w='100%' h='10' bg='white' placeholder="1" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" />
+                <Input w='100%' h='10' bg='white' placeholder="2" required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" />
+                <Input w='100%' h='10' bg='white' placeholder="3" required />
               </div>
             </Grid>
           </Box>
