@@ -13,12 +13,12 @@ function NewCharacterForm() {
   const navigate = useNavigate();
 
   const [name, setName] = useState("");
-  const [avatar, setAvatar] = useState('');
-  const [role, setRole] = useState('');
-  const [faction, setFaction] = useState('');
-  const [ambition, setAmbition] = useState('');
-  const [mainSkill, setMainSkill] = useState('');
-  const [secondarySkill, setSecondarySkill] = useState('');
+  const [avatar, setAvatar] = useState("");
+  const [role, setRole] = useState("");
+  const [faction, setFaction] = useState("");
+  const [ambition, setAmbition] = useState("");
+  const [mainSkill, setMainSkill] = useState("");
+  const [secondarySkill, setSecondarySkill] = useState("");
   const [selectedTrait, setSelectedTrait] = useState([]);
   const [selectedSkill, setSelectedSkill] = useState([]);
   const [talent, setTalent] = useState([]);
@@ -53,8 +53,6 @@ function NewCharacterForm() {
   const [competenceRhetorique, setCompetenceRhetorique] = useState("");
   const [pointsRhetorique, setPointsRhetorique] = useState("");
   const [speRhetorique, setSpeRhetorique] = useState("");
-
-
 
   const handleTalentChange = (newTalent: any) => {
     setTalent(newTalent);
@@ -97,7 +95,21 @@ function NewCharacterForm() {
       principeVerite,
       pointsVerite,
       maximeVerite,
-
+      competenceAnalyse,
+      pointsAnalyse,
+      speAnalyse,
+      competenceCombat,
+      pointsCombat,
+      speCombat,
+      competenceDiscipline,
+      pointsDiscipline,
+      speDiscipline,
+      competenceMobilite,
+      pointsMobilite,
+      speMobilite,
+      competenceRhetorique,
+      pointsRhetorique,
+      speRhetorique,
     });
     navigate("/");
     console.log("addNewCharacter");
