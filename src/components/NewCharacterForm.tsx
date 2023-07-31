@@ -35,6 +35,9 @@ function NewCharacterForm() {
   const [principeJustice, setPrincipeJustice] = useState("");
   const [pointsJustice, setPointsJustice] = useState("");
   const [maximeJustice, setMaximeJustice] = useState("");
+  const [principeVerite, setPrincipeVerite] = useState("");
+  const [pointsVerite, setPointsVerite] = useState("");
+  const [maximeVerite, setMaximeVerite] = useState("");
 
 
 
@@ -320,8 +323,8 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={principeVerite}
-                  // onChange={(e) => setPrincipeVerite(e.target.value)}
+                  value={principeVerite}
+                  onChange={(e) => setPrincipeVerite(e.target.value)}
                   placeholder="1"
                   required />
               </div>
@@ -331,8 +334,8 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={pointsVerite}
-                  // onChange={(e) => setPointsVerite(e.target.value)}
+                  value={pointsVerite}
+                  onChange={(e) => setPointsVerite(e.target.value)}
                   placeholder="2"
                   required />
               </div>
@@ -342,8 +345,8 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={maximeVerite}
-                  // onChange={(e) => setMaximeVerite(e.target.value)}
+                  value={maximeVerite}
+                  onChange={(e) => setMaximeVerite(e.target.value)}
                   placeholder="3"
                   required />
               </div>
