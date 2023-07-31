@@ -6,7 +6,7 @@ import TagsInput from "react-tagsinput";
 import "react-tagsinput/react-tagsinput.css";
 import { useNavigate } from "react-router-dom";
 import { addCharacter } from "../lib/controller";
-import { Box, Button, Grid, Input, Textarea } from "@chakra-ui/react";
+import { Box, Grid, Input, Textarea } from "@chakra-ui/react";
 
 function NewCharacterForm() {
 
@@ -15,6 +15,7 @@ function NewCharacterForm() {
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [role, setRole] = useState('');
+  const [dicton, setDicton] = useState('');
   const [faction, setFaction] = useState('');
   const [ambition, setAmbition] = useState('');
   const [mainSkill, setMainSkill] = useState('');
@@ -72,6 +73,7 @@ function NewCharacterForm() {
       name,
       avatar,
       role,
+      dicton,
       faction,
       ambition,
       mainSkill,
@@ -159,6 +161,14 @@ function NewCharacterForm() {
             value={role}
             onChange={(e) => setRole(e.target.value)}
           />
+          <label>Dicton :</label>
+          <Input
+            className="mb-5"
+            bg='white'
+            required
+            value={dicton}
+            onChange={(e) => setDicton(e.target.value)}
+          />
           <label>Faction :</label>
           <Input
             className="mb-5"
@@ -235,7 +245,6 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  placeholder="1"
                   value={principeDevoir}
                   onChange={(e) => setPrincipeDevoir(e.target.value)}
                   required />
@@ -249,7 +258,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsDevoir}
                   onChange={(e) => setPointsDevoir(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -260,7 +268,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={maximeDevoir}
                   onChange={(e) => setMaximeDevoir(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
               <div>
@@ -271,7 +278,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={principeDomination}
                   onChange={(e) => setPrincipeDomination(e.target.value)}
-                  placeholder="1"
                   required />
               </div>
               <div>
@@ -283,7 +289,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsDomination}
                   onChange={(e) => setPointsDomination(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -294,7 +299,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={maximeDomination}
                   onChange={(e) => setMaximeDomination(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
               <div>
@@ -305,7 +309,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={principeFoi}
                   onChange={(e) => setPrincipeFoi(e.target.value)}
-                  placeholder="1"
                   required />
               </div>
               <div>
@@ -317,7 +320,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsFoi}
                   onChange={(e) => setPointsFoi(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -328,7 +330,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={maximeFoi}
                   onChange={(e) => setMaximeFoi(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
               <div>
@@ -336,7 +337,6 @@ function NewCharacterForm() {
                 <Input
                   w='100%' h='10'
                   bg='white'
-                  placeholder="1"
                   value={principeJustice}
                   onChange={(e) => setPrincipeJustice(e.target.value)}
                   required />
@@ -348,7 +348,6 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  placeholder="2"
                   value={pointsJustice}
                   onChange={(e) => setPointsJustice(e.target.value)}
                   required />
@@ -361,7 +360,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={maximeJustice}
                   onChange={(e) => setMaximeJustice(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
               <div>
@@ -372,7 +370,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={principeVerite}
                   onChange={(e) => setPrincipeVerite(e.target.value)}
-                  placeholder="1"
                   required />
               </div>
               <div>
@@ -384,7 +381,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsVerite}
                   onChange={(e) => setPointsVerite(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -395,7 +391,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={maximeVerite}
                   onChange={(e) => setMaximeVerite(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
             </Grid>
@@ -423,7 +418,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={competenceAnalyse}
                   onChange={(e) => setCompetenceAnalyse(e.target.value)}
-                  placeholder="1"
                   required />
               </div>
               <div>
@@ -435,7 +429,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsAnalyse}
                   onChange={(e) => setPointsAnalyse(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -446,7 +439,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={speAnalyse}
                   onChange={(e) => setSpeAnalyse(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
               <div>
@@ -457,7 +449,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={competenceCombat}
                   onChange={(e) => setCompetenceCombat(e.target.value)}
-                  placeholder="1"
                   required />
               </div>
               <div>
@@ -469,7 +460,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsCombat}
                   onChange={(e) => setPointsCombat(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -480,7 +470,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={speCombat}
                   onChange={(e) => setSpeCombat(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
               <div>
@@ -491,7 +480,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={competenceDiscipline}
                   onChange={(e) => setCompetenceDiscipline(e.target.value)}
-                  placeholder="1"
                   required />
               </div>
               <div>
@@ -503,7 +491,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsDiscipline}
                   onChange={(e) => setPointsDiscipline(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -514,7 +501,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={speDiscipline}
                   onChange={(e) => setSpeDiscipline(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
               <div>
@@ -525,7 +511,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={competenceMobilite}
                   onChange={(e) => setCompetenceMobilite(e.target.value)}
-                  placeholder="1"
                   required />
               </div>
               <div>
@@ -537,7 +522,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsMobilite}
                   onChange={(e) => setPointsMobilite(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -548,7 +532,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={speMobilite}
                   onChange={(e) => setSpeMobilite(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
               <div>
@@ -559,7 +542,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={competenceRhetorique}
                   onChange={(e) => setCompetenceRhetorique(e.target.value)}
-                  placeholder="1"
                   required />
               </div>
               <div>
@@ -571,7 +553,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={pointsRhetorique}
                   onChange={(e) => setPointsRhetorique(e.target.value)}
-                  placeholder="2"
                   required />
               </div>
               <div>
@@ -582,7 +563,6 @@ function NewCharacterForm() {
                   bg='white'
                   value={speRhetorique}
                   onChange={(e) => setSpeRhetorique(e.target.value)}
-                  placeholder="3"
                   required />
               </div>
             </Grid>

@@ -11,6 +11,7 @@ export interface AddCharacter {
     name: string
     avatar: string
     role: string
+    dicton: string
     faction: string
     ambition: string
     mainSkill: string
