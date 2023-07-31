@@ -12,47 +12,47 @@ function NewCharacterForm() {
 
   const navigate = useNavigate();
 
-  const [name, setName] = useState("");
-  const [avatar, setAvatar] = useState("");
-  const [role, setRole] = useState("");
-  const [faction, setFaction] = useState("");
-  const [ambition, setAmbition] = useState("");
-  const [mainSkill, setMainSkill] = useState("");
-  const [secondarySkill, setSecondarySkill] = useState("");
+  const [name, setName] = useState('');
+  const [avatar, setAvatar] = useState('');
+  const [role, setRole] = useState('');
+  const [faction, setFaction] = useState('');
+  const [ambition, setAmbition] = useState('');
+  const [mainSkill, setMainSkill] = useState('');
+  const [secondarySkill, setSecondarySkill] = useState('');
   const [selectedTrait, setSelectedTrait] = useState([]);
   const [selectedSkill, setSelectedSkill] = useState([]);
   const [talent, setTalent] = useState([]);
-  const [description, setDescritpion] = useState("");
-  const [principeDevoir, setPrincipeDevoir] = useState("");
-  const [pointsDevoir, setPointsDevoir] = useState("");
-  const [maximeDevoir, setMaximeDevoir] = useState("");
-  const [principeDomination, setPrincipeDomination] = useState("");
-  const [pointsDomination, setPointsDomination] = useState("");
-  const [maximeDomination, setMaximeDomination] = useState("");
-  const [principeFoi, setPrincipeFoi] = useState("");
-  const [pointsFoi, setPointsFoi] = useState("");
-  const [maximeFoi, setMaximeFoi] = useState("");
-  const [principeJustice, setPrincipeJustice] = useState("");
-  const [pointsJustice, setPointsJustice] = useState("");
-  const [maximeJustice, setMaximeJustice] = useState("");
-  const [principeVerite, setPrincipeVerite] = useState("");
-  const [pointsVerite, setPointsVerite] = useState("");
-  const [maximeVerite, setMaximeVerite] = useState("");
-  const [competenceAnalyse, setCompetenceAnalyse] = useState("");
-  const [pointsAnalyse, setPointsAnalyse] = useState("");
-  const [speAnalyse, setSpeAnalyse] = useState("");
-  const [competenceCombat, setCompetenceCombat] = useState("");
-  const [pointsCombat, setPointsCombat] = useState("");
-  const [speCombat, setSpeCombat] = useState("");
-  const [competenceDiscipline, setCompetenceDiscipline] = useState("");
-  const [pointsDiscipline, setPointsDiscipline] = useState("");
-  const [speDiscipline, setSpeDiscipline] = useState("");
-  const [competenceMobilite, setCompetenceMobilite] = useState("");
-  const [pointsMobilite, setPointsMobilite] = useState("");
-  const [speMobilite, setSpeMobilite] = useState("");
-  const [competenceRhetorique, setCompetenceRhetorique] = useState("");
-  const [pointsRhetorique, setPointsRhetorique] = useState("");
-  const [speRhetorique, setSpeRhetorique] = useState("");
+  const [description, setDescritpion] = useState('');
+  const [principeDevoir, setPrincipeDevoir] = useState('');
+  const [pointsDevoir, setPointsDevoir] = useState('');
+  const [maximeDevoir, setMaximeDevoir] = useState('');
+  const [principeDomination, setPrincipeDomination] = useState('');
+  const [pointsDomination, setPointsDomination] = useState('');
+  const [maximeDomination, setMaximeDomination] = useState('');
+  const [principeFoi, setPrincipeFoi] = useState('');
+  const [pointsFoi, setPointsFoi] = useState('');
+  const [maximeFoi, setMaximeFoi] = useState('');
+  const [principeJustice, setPrincipeJustice] = useState('');
+  const [pointsJustice, setPointsJustice] = useState('');
+  const [maximeJustice, setMaximeJustice] = useState('');
+  const [principeVerite, setPrincipeVerite] = useState('');
+  const [pointsVerite, setPointsVerite] = useState('');
+  const [maximeVerite, setMaximeVerite] = useState('');
+  const [competenceAnalyse, setCompetenceAnalyse] = useState('');
+  const [pointsAnalyse, setPointsAnalyse] = useState('');
+  const [speAnalyse, setSpeAnalyse] = useState('');
+  const [competenceCombat, setCompetenceCombat] = useState('');
+  const [pointsCombat, setPointsCombat] = useState('');
+  const [speCombat, setSpeCombat] = useState('');
+  const [competenceDiscipline, setCompetenceDiscipline] = useState('');
+  const [pointsDiscipline, setPointsDiscipline] = useState('');
+  const [speDiscipline, setSpeDiscipline] = useState('');
+  const [competenceMobilite, setCompetenceMobilite] = useState('');
+  const [pointsMobilite, setPointsMobilite] = useState('');
+  const [speMobilite, setSpeMobilite] = useState('');
+  const [competenceRhetorique, setCompetenceRhetorique] = useState('');
+  const [pointsRhetorique, setPointsRhetorique] = useState('');
+  const [speRhetorique, setSpeRhetorique] = useState('');
 
   const handleTalentChange = (newTalent: any) => {
     setTalent(newTalent);
@@ -590,7 +590,7 @@ function NewCharacterForm() {
           {/* End Box Specialisations */}
 
 
-          <Button className="mt-3" colorScheme='blue'>Sauvegarder</Button>
+          <button className="moreinfo-btn">Sauvegarder</button>
         </form>
       </div>
     </div >
