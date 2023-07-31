@@ -216,6 +216,7 @@ function NewCharacterForm() {
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
@@ -249,6 +250,7 @@ function NewCharacterForm() {
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
@@ -282,6 +284,7 @@ function NewCharacterForm() {
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
@@ -314,6 +317,7 @@ function NewCharacterForm() {
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
@@ -347,6 +351,7 @@ function NewCharacterForm() {
               <div>
                 <label style={{ color: 'transparent' }}>1</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
@@ -382,65 +387,171 @@ function NewCharacterForm() {
               <div>
                 <label style={{ textAlign: 'center', fontSize: '30px' }}>Spécialisations</label>
               </div>
+
               <div>
                 <label style={{ textAlign: 'left' }}>Analyse</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={competenceAnalyse}
+                  // onChange={(e) => setCompetenceAnalyse(e.target.value)}
+                  placeholder="1"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={pointsAnalyse}
+                  // onChange={(e) => setPointsAnalyse(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={speAnalyse}
+                  // onChange={(e) => setSpeAnalyse(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
               <div>
                 <label>Combat</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={competenceCombat}
+                  // onChange={(e) => setCompetenceCombat(e.target.value)}
+                  placeholder="1"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={pointsCombat}
+                  // onChange={(e) => setPointsCombat(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={speCombat}
+                  // onChange={(e) => setSpeCombat(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
               <div>
                 <label>Discipline</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={competenceDiscipline}
+                  // onChange={(e) => setCompetenceDiscipline(e.target.value)}
+                  placeholder="1"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={pointsDiscipline}
+                  // onChange={(e) => setPointsDiscipline(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={speDiscipline}
+                  // onChange={(e) => setSpeDiscipline(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
               <div>
                 <label>Mobilité</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={competenceMobilite}
+                  // onChange={(e) => setCompetenceMobilite(e.target.value)}
+                  placeholder="1"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={pointsMobilite}
+                  // onChange={(e) => setPointsMobilite(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={speMobilite}
+                  // onChange={(e) => setSpeMobilite(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
               <div>
                 <label>Rhétorique</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={competenceRhetorique}
+                  // onChange={(e) => setCompetenceRhetorique(e.target.value)}
+                  placeholder="1"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={pointsRhetorique}
+                  // onChange={(e) => setPointsRhetorique(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={speRhetorique}
+                  // onChange={(e) => setSpeRhetorique(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
             </Grid>
           </Box>
