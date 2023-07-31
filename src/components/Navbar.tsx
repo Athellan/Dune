@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 function Navbar() {
   const [selectedButton, setSelectedButton] = useState(null);
 
@@ -14,9 +15,9 @@ function Navbar() {
       <div className="links">
         <Link
           style={{
-            color: selectedButton === "liste" ? "white" : "rgb(77, 77, 77)",
+            color: selectedButton === "liste" ? "white" : "white",
             backgroundColor:
-              selectedButton === "liste" ? "rgb(77, 77, 77)" : "transparent",
+              selectedButton === "liste" ? "rgba(48, 130, 206, 255)" : "transparent",
             borderRadius: "8px",
           }}
           to="/"
@@ -26,9 +27,9 @@ function Navbar() {
         </Link>
         <Link
           style={{
-            color: selectedButton === "nouveau" ? "white" : "rgb(77, 77, 77)",
+            color: selectedButton === "nouveau" ? "white" : "white",
             backgroundColor:
-              selectedButton === "nouveau" ? "rgb(77, 77, 77)" : "transparent",
+              selectedButton === "nouveau" ? "rgba(48, 130, 206, 255)" : "transparent",
             borderRadius: "8px",
           }}
           to="/newcharacter"
@@ -38,9 +39,9 @@ function Navbar() {
         </Link>
         <Link
           style={{
-            color: selectedButton === "search" ? "white" : "rgb(77, 77, 77)",
+            color: selectedButton === "search" ? "white" : "white",
             backgroundColor:
-              selectedButton === "search" ? "rgb(77, 77, 77)" : "transparent",
+              selectedButton === "search" ? "rgba(48, 130, 206, 255)" : "transparent",
             borderRadius: "8px",
           }}
           to="/search"

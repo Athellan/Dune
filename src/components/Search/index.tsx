@@ -8,6 +8,7 @@ import { DocumentData, QuerySnapshot } from "firebase/firestore/lite";
 import { charactersCollection } from "../../lib/controller";
 import { NewCharacter } from "../../types/character";
 import { Link } from "react-router-dom";
+import { Button, Input } from "@chakra-ui/react";
 
 const Search: React.FC = () => {
 
@@ -42,22 +43,22 @@ const Search: React.FC = () => {
 
     return (
         <div className="search__page">
-            <div className="search">
-                <input
+            <div className="search !w-1/4">
+                <Input
+                    bg="white"
                     type="text"
-                    className="inputsearch"
                     placeholder="Rechercher un personnage"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />
-                <button
-                    className=""
+                <Button
+                    colorScheme='blue'
                     onClick={handleSearch}>
                     Go
-                </button>
+                </Button >
             </div>
             <div>
-                {filteredCharacters.length ? (
+                {filteredCharacters.length > 0 ? (
                     filteredCharacters.map((character) => (
                         <div className="search__title" key={character.id}>
                             <Link to={`/character/${character.id}`} state={{ character: character }}>
@@ -65,7 +66,6 @@ const Search: React.FC = () => {
                             </Link>
                         </div>
                     ))
-
                 ) : (
                     <h1>Aucun personnage trouvé</h1>
                 )}

@@ -7,6 +7,7 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { updateCharacter } from "../lib/controller";
+import { Button, Input, Textarea } from "@chakra-ui/react";
 
 function CharacterInformation() {
 
@@ -44,7 +45,6 @@ function CharacterInformation() {
     setEditedCharacter(location.state.character);
   };
 
-
   return (
     <>
       <h1 className="title mb-5 mt-8">Détails du personnage</h1>
@@ -57,35 +57,35 @@ function CharacterInformation() {
               <>
                 <div className="character-details">
                   <div className="flex flex-col">
-                    <div className="input-group flex">
+                    <div className="flex">
                       <label>Nom:</label>
-                      <input
+                      <Input
                         type="text"
                         value={newName}
                         onChange={(e) => setNewName(e.target.value)}
                         className="character__name font-bold"
                       />
                     </div>
-                    <div className="input-group flex">
+                    <div className="flex">
                       <label>Rôle:</label>
-                      <input
+                      <Input
                         type="text"
                         value={newRole}
                         onChange={(e) => setNewRole(e.target.value)}
                         className="character__role"
                       />
                     </div>
-                    <div className="input-group flex">
+                    <div className="flex">
                       <label>Dicton:</label>
-                      <textarea
+                      <Textarea
                         value={newDicton}
                         onChange={(e) => setNewDicton(e.target.value)}
                         className="character_dicton"
                       />
                     </div>
-                    <div className="input-group flex">
+                    <div className="flex">
                       <label>Description:</label>
-                      <textarea
+                      <Textarea
                         value={newDescription}
                         onChange={(e) => setNewDescription(e.target.value)}
                         className="character__description text-justify"
@@ -95,24 +95,24 @@ function CharacterInformation() {
                 </div>
               </>
             ) : (
-              <>
+              <div className="space-y-3">
                 <h2 className="character__name font-bold">{editedCharacter.name}</h2>
                 <h3 className="character__role">{editedCharacter.role}</h3>
-                <h4 className="character_dicton mb-5">"{editedCharacter.dicton}"</h4>
-                <p className="character__description text-justify">{editedCharacter.description}</p>
-              </>
+                <h4 className="character_dicton">"{editedCharacter.dicton}"</h4>
+                <p className="character__description">{editedCharacter.description}</p>
+              </div>
             )}
           </div>
         </div>
         {!editMode && (
-          <strong className="edit-text" onClick={handleEditClick}>
+          <Button className="mt-10" colorScheme='blue' onClick={handleEditClick}>
             Modifier les informations
-          </strong>
+          </Button>
         )}
         {editMode && (
-          <div>
-            <button className="moreinfo-btn mr-10" onClick={handleSaveClick}>Enregistrer</button>
-            <button className="moreinfo-btn" onClick={handleCancelClick}>Annuler</button>
+          <div className="space-x-3 mt-10">
+            <Button colorScheme='blue' onClick={handleSaveClick}>Enregistrer</Button>
+            <Button colorScheme='blue' onClick={handleCancelClick}>Annuler</Button>
           </div>
         )}
       </div>

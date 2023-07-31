@@ -4,8 +4,7 @@ import NewCharacterForm from "./components/NewCharacterForm";
 import NotFound from "./components/NotFound";
 import CharacterList from "./components/CharacterList";
 import CharacterInformation from "./components/CharacterInformation";
-import React from "react";
-const Search = React.lazy(() => import('./components/Search'));
+import Search from "./components/Search";
 
 function App() {
   return (
