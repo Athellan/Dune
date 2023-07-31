@@ -23,6 +23,20 @@ function NewCharacterForm() {
   const [selectedSkill, setSelectedSkill] = useState([]);
   const [talent, setTalent] = useState([]);
   const [description, setDescritpion] = useState("");
+  const [principeDevoir, setPrincipeDevoir] = useState("");
+  const [pointsDevoir, setPointsDevoir] = useState("");
+  const [maximeDevoir, setMaximeDevoir] = useState("");
+  const [principeDomination, setPrincipeDomination] = useState("");
+  const [pointsDomination, setPointsDomination] = useState("");
+  const [maximeDomination, setMaximeDomination] = useState("");
+  const [principeFoi, setPrincipeFoi] = useState("");
+  const [pointsFoi, setPointsFoi] = useState("");
+  const [maximeFoi, setMaximeFoi] = useState("");
+  const [principeJustice, setPrincipeJustice] = useState("");
+  const [pointsJustice, setPointsJustice] = useState("");
+  const [maximeJustice, setMaximeJustice] = useState("");
+
+
 
   const handleTalentChange = (newTalent: any) => {
     setTalent(newTalent);
@@ -171,63 +185,167 @@ function NewCharacterForm() {
               </div>
               <div>
                 <label style={{ textAlign: 'left' }}>Devoir</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  placeholder="1"
+                  value={principeDevoir}
+                  onChange={(e) => setPrincipeDevoir(e.target.value)}
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={pointsDevoir}
+                  onChange={(e) => setPointsDevoir(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={maximeDevoir}
+                  onChange={(e) => setMaximeDevoir(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
               <div>
                 <label>Domination</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={principeDomination}
+                  onChange={(e) => setPrincipeDomination(e.target.value)}
+                  placeholder="1"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={pointsDomination}
+                  onChange={(e) => setPointsDomination(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={maximeDomination}
+                  onChange={(e) => setMaximeDomination(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
               <div>
                 <label>Foi</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={principeFoi}
+                  onChange={(e) => setPrincipeFoi(e.target.value)}
+                  placeholder="1"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={pointsFoi}
+                  onChange={(e) => setPointsFoi(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={maximeFoi}
+                  onChange={(e) => setMaximeFoi(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
               <div>
                 <label>Justice</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%' h='10'
+                  bg='white'
+                  placeholder="1"
+                  value={principeJustice}
+                  onChange={(e) => setPrincipeJustice(e.target.value)}
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  placeholder="2"
+                  value={pointsJustice}
+                  onChange={(e) => setPointsJustice(e.target.value)}
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  value={maximeJustice}
+                  onChange={(e) => setMaximeJustice(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
               <div>
                 <label>Vérité</label>
-                <Input w='100%' h='10' bg='white' placeholder="1" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={principeVerite}
+                  // onChange={(e) => setPrincipeVerite(e.target.value)}
+                  placeholder="1"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>1</label>
-                <Input w='100%' h='10' bg='white' placeholder="2" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={pointsVerite}
+                  // onChange={(e) => setPointsVerite(e.target.value)}
+                  placeholder="2"
+                  required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
-                <Input w='100%' h='10' bg='white' placeholder="3" required />
+                <Input
+                  w='100%'
+                  h='10'
+                  bg='white'
+                  // value={maximeVerite}
+                  // onChange={(e) => setMaximeVerite(e.target.value)}
+                  placeholder="3"
+                  required />
               </div>
             </Grid>
           </Box>
