@@ -66,7 +66,23 @@ function NewCharacterForm() {
       selectedTrait,
       selectedSkill,
       talent,
-      description
+      description,
+      principeDevoir,
+      pointsDevoir,
+      maximeDevoir,
+      principeDomination,
+      pointsDomination,
+      maximeDomination,
+      principeFoi,
+      pointsFoi,
+      maximeFoi,
+      principeJustice,
+      pointsJustice,
+      maximeJustice,
+      principeVerite,
+      pointsVerite,
+      maximeVerite,
+
     });
     navigate("/");
     console.log("addNewCharacter");

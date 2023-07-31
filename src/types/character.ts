@@ -18,5 +18,20 @@ export interface AddCharacter {
     selectedTrait: string[]
     selectedSkill: string[]
     talent: string[]
-    description: string
+    description: string,
+    principeDevoir: string,
+    pointsDevoir: string,
+    maximeDevoir: string,
+    principeDomination: string,
+    pointsDomination: string,
+    maximeDomination: string,
+    principeFoi: string,
+    pointsFoi: string,
+    maximeFoi: string,
+    principeJustice: string,
+    pointsJustice: string,
+    maximeJustice: string,
+    principeVerite: string,
+    pointsVerite: string,
+    maximeVerite: string,
 }
