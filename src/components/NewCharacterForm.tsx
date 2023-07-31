@@ -38,6 +38,21 @@ function NewCharacterForm() {
   const [principeVerite, setPrincipeVerite] = useState("");
   const [pointsVerite, setPointsVerite] = useState("");
   const [maximeVerite, setMaximeVerite] = useState("");
+  const [competenceAnalyse, setCompetenceAnalyse] = useState("");
+  const [pointsAnalyse, setPointsAnalyse] = useState("");
+  const [speAnalyse, setSpeAnalyse] = useState("");
+  const [competenceCombat, setCompetenceCombat] = useState("");
+  const [pointsCombat, setPointsCombat] = useState("");
+  const [speCombat, setSpeCombat] = useState("");
+  const [competenceDiscipline, setCompetenceDiscipline] = useState("");
+  const [pointsDiscipline, setPointsDiscipline] = useState("");
+  const [speDiscipline, setSpeDiscipline] = useState("");
+  const [competenceMobilite, setCompetenceMobilite] = useState("");
+  const [pointsMobilite, setPointsMobilite] = useState("");
+  const [speMobilite, setSpeMobilite] = useState("");
+  const [competenceRhetorique, setCompetenceRhetorique] = useState("");
+  const [pointsRhetorique, setPointsRhetorique] = useState("");
+  const [speRhetorique, setSpeRhetorique] = useState("");
 
 
 
@@ -394,19 +409,20 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={competenceAnalyse}
-                  // onChange={(e) => setCompetenceAnalyse(e.target.value)}
+                  value={competenceAnalyse}
+                  onChange={(e) => setCompetenceAnalyse(e.target.value)}
                   placeholder="1"
                   required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={pointsAnalyse}
-                  // onChange={(e) => setPointsAnalyse(e.target.value)}
+                  value={pointsAnalyse}
+                  onChange={(e) => setPointsAnalyse(e.target.value)}
                   placeholder="2"
                   required />
               </div>
@@ -416,8 +432,8 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={speAnalyse}
-                  // onChange={(e) => setSpeAnalyse(e.target.value)}
+                  value={speAnalyse}
+                  onChange={(e) => setSpeAnalyse(e.target.value)}
                   placeholder="3"
                   required />
               </div>
@@ -427,19 +443,20 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={competenceCombat}
-                  // onChange={(e) => setCompetenceCombat(e.target.value)}
+                  value={competenceCombat}
+                  onChange={(e) => setCompetenceCombat(e.target.value)}
                   placeholder="1"
                   required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={pointsCombat}
-                  // onChange={(e) => setPointsCombat(e.target.value)}
+                  value={pointsCombat}
+                  onChange={(e) => setPointsCombat(e.target.value)}
                   placeholder="2"
                   required />
               </div>
@@ -449,8 +466,8 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={speCombat}
-                  // onChange={(e) => setSpeCombat(e.target.value)}
+                  value={speCombat}
+                  onChange={(e) => setSpeCombat(e.target.value)}
                   placeholder="3"
                   required />
               </div>
@@ -460,19 +477,20 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={competenceDiscipline}
-                  // onChange={(e) => setCompetenceDiscipline(e.target.value)}
+                  value={competenceDiscipline}
+                  onChange={(e) => setCompetenceDiscipline(e.target.value)}
                   placeholder="1"
                   required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={pointsDiscipline}
-                  // onChange={(e) => setPointsDiscipline(e.target.value)}
+                  value={pointsDiscipline}
+                  onChange={(e) => setPointsDiscipline(e.target.value)}
                   placeholder="2"
                   required />
               </div>
@@ -482,8 +500,8 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={speDiscipline}
-                  // onChange={(e) => setSpeDiscipline(e.target.value)}
+                  value={speDiscipline}
+                  onChange={(e) => setSpeDiscipline(e.target.value)}
                   placeholder="3"
                   required />
               </div>
@@ -493,19 +511,20 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={competenceMobilite}
-                  // onChange={(e) => setCompetenceMobilite(e.target.value)}
+                  value={competenceMobilite}
+                  onChange={(e) => setCompetenceMobilite(e.target.value)}
                   placeholder="1"
                   required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={pointsMobilite}
-                  // onChange={(e) => setPointsMobilite(e.target.value)}
+                  value={pointsMobilite}
+                  onChange={(e) => setPointsMobilite(e.target.value)}
                   placeholder="2"
                   required />
               </div>
@@ -515,8 +534,8 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={speMobilite}
-                  // onChange={(e) => setSpeMobilite(e.target.value)}
+                  value={speMobilite}
+                  onChange={(e) => setSpeMobilite(e.target.value)}
                   placeholder="3"
                   required />
               </div>
@@ -526,19 +545,20 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={competenceRhetorique}
-                  // onChange={(e) => setCompetenceRhetorique(e.target.value)}
+                  value={competenceRhetorique}
+                  onChange={(e) => setCompetenceRhetorique(e.target.value)}
                   placeholder="1"
                   required />
               </div>
               <div>
                 <label style={{ color: 'transparent' }}>.</label>
                 <Input
+                  style={{ textAlign: 'center' }}
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={pointsRhetorique}
-                  // onChange={(e) => setPointsRhetorique(e.target.value)}
+                  value={pointsRhetorique}
+                  onChange={(e) => setPointsRhetorique(e.target.value)}
                   placeholder="2"
                   required />
               </div>
@@ -548,8 +568,8 @@ function NewCharacterForm() {
                   w='100%'
                   h='10'
                   bg='white'
-                  // value={speRhetorique}
-                  // onChange={(e) => setSpeRhetorique(e.target.value)}
+                  value={speRhetorique}
+                  onChange={(e) => setSpeRhetorique(e.target.value)}
                   placeholder="3"
                   required />
               </div>
