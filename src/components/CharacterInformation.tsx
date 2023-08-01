@@ -101,7 +101,7 @@ function CharacterInformation() {
                 <h4 className="character_dicton">"{editedCharacter.dicton}"</h4>
                 <p className="character__description">{editedCharacter.description}</p>
                 <div>
-                  <Tag className="mr-2" variant='solid' colorScheme='linkedin'>{editedCharacter.mainSkill}</Tag>
+                  <Tag className="mr-2" variant='solid' colorScheme='red'>{editedCharacter.mainSkill}</Tag>
                   <Tag className="mr-2" variant='solid' colorScheme='blue'>{editedCharacter.secondarySkill}</Tag>
                 </div>
                 <div className="skills">
