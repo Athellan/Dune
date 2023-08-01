@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-floating-promises */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
@@ -99,11 +100,15 @@ function CharacterInformation() {
                 <h2 className="character__name font-bold">{editedCharacter.name}</h2>
                 <h3 className="character__role">{editedCharacter.role}</h3>
                 <h4 className="character_dicton">"{editedCharacter.dicton}"</h4>
+                <h3 className="character__faction">Ma faction : {editedCharacter.faction}</h3>
+                <h3 className="character__ambition">Mon ambition : {editedCharacter.ambition}</h3>
                 <p className="character__description">{editedCharacter.description}</p>
-                <div>
+                <div className="!mt-5">
+                  <h4 className="underline mb-2">Compétence Principale | Compétence Secondaire</h4>
                   <Tag className="mr-2" variant='solid' colorScheme='red'>{editedCharacter.mainSkill}</Tag>
                   <Tag className="mr-2" variant='solid' colorScheme='blue'>{editedCharacter.secondarySkill}</Tag>
                 </div>
+                <h4 className="underline">Compétences Annexes</h4>
                 <div className="skills">
                   <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[0].label}</Tag>
                   {editedCharacter.selectedSkill[1] ? (
@@ -116,6 +121,7 @@ function CharacterInformation() {
                     <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[3].label}</Tag>
                   ) : null}
                 </div>
+                <h4 className="underline">Traits</h4>
                 <div className="traits">
                   {editedCharacter.selectedTrait[0] ? (
                     <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[0].label}</Tag>
@@ -129,6 +135,64 @@ function CharacterInformation() {
                   {editedCharacter.selectedTrait[3] ? (
                     <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[3].label}</Tag>
                   ) : null}
+                </div>
+                <h4 className="underline">Principes</h4>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag>{editedCharacter.principeDevoir}</Tag>
+                  <Tag>{editedCharacter.pointsDevoir}</Tag>
+                  <Tag>{editedCharacter.maximeDevoir}</Tag>
+                </div>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag>{editedCharacter.principeDomination}</Tag>
+                  <Tag>{editedCharacter.pointsDomination}</Tag>
+                  <Tag>{editedCharacter.maximeDomination}</Tag>
+                </div>
+                <div className="flex flex-row space-x-2 justify-center items-center">
+                  <Tag>{editedCharacter.principeFoi}</Tag>
+                  <Tag>{editedCharacter.pointsFoi}</Tag>
+                  <Tag>{editedCharacter.maximeFoi}</Tag>
+                </div>
+                <div className="flex flex-row space-x-2 justify-center items-center">
+                  <Tag>{editedCharacter.principeJustice}</Tag>
+                  <Tag>{editedCharacter.pointsJustice}</Tag>
+                  <Tag>{editedCharacter.maximeJustice}</Tag>
+                </div>
+                <div className="flex flex-row space-x-2 justify-center items-center">
+                  <Tag>{editedCharacter.principeVerite}</Tag>
+                  <Tag>{editedCharacter.pointsVerite}</Tag>
+                  <Tag>{editedCharacter.maximeVerite}</Tag>
+                </div>
+                <h4 className="underline">Compétences</h4>
+                <div className="flex flex-row space-x-2 justify-center items-center">
+                  <Tag>{editedCharacter.competenceAnalyse}</Tag>
+                  <Tag>{editedCharacter.pointsAnalyse}</Tag>
+                  <Tag>{editedCharacter.speAnalyse}</Tag>
+                </div>
+                <div className="flex flex-row space-x-2 justify-center items-center">
+                  <Tag>{editedCharacter.competenceCombat}</Tag>
+                  <Tag>{editedCharacter.pointsCombat}</Tag>
+                  <Tag>{editedCharacter.speCombat}</Tag>
+                </div>
+                <div className="flex flex-row space-x-2 justify-center items-center">
+                  <Tag>{editedCharacter.competenceDiscipline}</Tag>
+                  <Tag>{editedCharacter.pointsDiscipline}</Tag>
+                  <Tag>{editedCharacter.speDiscipline}</Tag>
+                </div>
+                <div className="flex flex-row space-x-2 justify-center items-center">
+                  <Tag>{editedCharacter.competenceMobilite}</Tag>
+                  <Tag>{editedCharacter.pointsMobilite}</Tag>
+                  <Tag>{editedCharacter.speMobilite}</Tag>
+                </div>
+                <div className="flex flex-row space-x-2 justify-center items-center">
+                  <Tag>{editedCharacter.competenceRhetorique}</Tag>
+                  <Tag>{editedCharacter.pointsRhetorique}</Tag>
+                  <Tag>{editedCharacter.speRhetorique}</Tag>
+                </div>
+                <h4 className="underline">Talents</h4>
+                <div>
+                  {editedCharacter.talent.map((talent: any, index: any) => (
+                    <Tag colorScheme='telegram' key={index}>{talent}</Tag>
+                  ))}
                 </div>
               </div>
             )}
