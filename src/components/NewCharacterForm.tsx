@@ -177,7 +177,7 @@ function NewCharacterForm() {
             value={faction}
             onChange={(e) => setFaction(e.target.value)}
           />
-          <label className="mb-2">Traits de personnalité:</label>
+          <label className="mb-2">Traits de personnalité (max 4) :</label>
           <Select
             placeholder="Choisis tes traits de personnalité"
             className="mb-5"

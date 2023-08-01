@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { updateCharacter } from "../lib/controller";
-import { Button, Input, Textarea } from "@chakra-ui/react";
+import { Button, Input, Textarea, Tag } from "@chakra-ui/react";
 
 function CharacterInformation() {
 
@@ -100,6 +100,36 @@ function CharacterInformation() {
                 <h3 className="character__role">{editedCharacter.role}</h3>
                 <h4 className="character_dicton">"{editedCharacter.dicton}"</h4>
                 <p className="character__description">{editedCharacter.description}</p>
+                <div>
+                  <Tag className="mr-2" variant='solid' colorScheme='linkedin'>{editedCharacter.mainSkill}</Tag>
+                  <Tag className="mr-2" variant='solid' colorScheme='blue'>{editedCharacter.secondarySkill}</Tag>
+                </div>
+                <div className="skills">
+                  <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[0].label}</Tag>
+                  {editedCharacter.selectedSkill[1] ? (
+                    <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[1].label}</Tag>
+                  ) : null}
+                  {editedCharacter.selectedSkill[2] ? (
+                    <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[2].label}</Tag>
+                  ) : null}
+                  {editedCharacter.selectedSkill[3] ? (
+                    <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[3].label}</Tag>
+                  ) : null}
+                </div>
+                <div className="traits">
+                  {editedCharacter.selectedTrait[0] ? (
+                    <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[0].label}</Tag>
+                  ) : null}
+                  {editedCharacter.selectedTrait[1] ? (
+                    <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[1].label}</Tag>
+                  ) : null}
+                  {editedCharacter.selectedTrait[2] ? (
+                    <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[2].label}</Tag>
+                  ) : null}
+                  {editedCharacter.selectedTrait[3] ? (
+                    <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[3].label}</Tag>
+                  ) : null}
+                </div>
               </div>
             )}
           </div>
