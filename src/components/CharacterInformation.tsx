@@ -22,6 +22,39 @@ function CharacterInformation() {
   const [newDicton, setNewDicton] = useState(editedCharacter.dicton);
   const [newRole, setNewRole] = useState(editedCharacter.role);
   const [newAvatar, setNewAvatar] = useState(editedCharacter.avatar);
+  const [newMainSkill, setNewMainSkill] = useState(editedCharacter.mainSkill);
+  const [newSecondarySkill, setNewSecondarySkill] = useState(editedCharacter.secondarySkill);
+  const [newSelectedSkill, setNewSelectedSkill] = useState(editedCharacter.selectedSkill);
+  const [newSelectedTrait, setNewSelectedTrait] = useState(editedCharacter.selectedTrait);
+  const [newPrincipeDevoir, setNewPrincipeDevoir] = useState(editedCharacter.principeDevoir);
+  const [newPointsDevoir, setNewPointsDevoir] = useState(editedCharacter.pointsDevoir);
+  const [newPrincipeDomination, setNewPrincipeDomination] = useState(editedCharacter.principeDomination);
+  const [newPointsDomination, setNewPointsDomination] = useState(editedCharacter.pointsDomination);
+  const [newPrincipeFoi, setNewPrincipeFoi] = useState(editedCharacter.principeFoi);
+  const [newPointsFoi, setNewPointsFoi] = useState(editedCharacter.pointsFoi);
+  const [newPrincipeJustice, setNewPrincipeJustice] = useState(editedCharacter.principeJustice);
+  const [newPointsJustice, setNewPointsJustice] = useState(editedCharacter.pointsJustice);
+  const [newPrincipeVerite, setNewPrincipeVerite] = useState(editedCharacter.principeVerite);
+  const [newPointsVerite, setNewPointsVerite] = useState(editedCharacter.pointsVerite);
+  const [newCompetenceAnalyse, setNewCompetenceAnalyse] = useState(editedCharacter.competenceAnalyse);
+  const [newPointsAnalyse, setNewPointsAnalyse] = useState(editedCharacter.pointsAnalyse);
+  const [newSpeAnalyse, setNewSpeAnalyse] = useState(editedCharacter.speAnalyse);
+  const [newCompetenceCombat, setNewCompetenceCombat] = useState(editedCharacter.competenceCombat);
+  const [newPointsCombat, setNewPointsCombat] = useState(editedCharacter.pointsCombat);
+  const [newSpeCombat, setNewSpeCombat] = useState(editedCharacter.speCombat);
+  const [newCompetenceDiscipline, setNewCompetenceDiscipline] = useState(editedCharacter.competenceDiscipline);
+  const [newPointsDiscipline, setNewPointsDiscipline] = useState(editedCharacter.pointsDiscipline);
+  const [newSpeDiscipline, setNewSpeDiscipline] = useState(editedCharacter.speDiscipline);
+  const [newCompetenceMobilite, setNewCompetenceMobilite] = useState(editedCharacter.competenceMobilite);
+  const [newPointsMobilite, setNewPointsMobilite] = useState(editedCharacter.pointsMobilite);
+  const [newSpeMobilite, setNewSpeMobilite] = useState(editedCharacter.speMobilite);
+  const [newCompetenceRhetorique, setNewCompetenceRhetorique] = useState(editedCharacter.competenceRhetorique);
+  const [newPointsRhetorique, setNewPointsRhetorique] = useState(editedCharacter.pointsRhetorique);
+  const [newSpeRhetorique, setNewSpeRhetorique] = useState(editedCharacter.speRhetorique);
+  const [newTalent, setNewTalent] = useState(editedCharacter.talent);
+  const [newFaction, setNewFaction] = useState(editedCharacter.faction);
+  const [newAmbition, setNewAmbition] = useState(editedCharacter.ambition);
+
 
   const id = location.state.character.id
 
@@ -92,17 +125,55 @@ function CharacterInformation() {
                         className="character__description text-justify"
                       />
                     </div>
+                    {/* Nouveaux champs ajoutés */}
+                    <div className="flex">
+                      <label>Faction:</label>
+                      <Input
+                        type="text"
+                        value={newFaction}
+                        onChange={(e) => setNewFaction(e.target.value)}
+                        className="character__faction"
+                      />
+                    </div>
+                    <div className="flex">
+                      <label>Ambition:</label>
+                      <Input
+                        type="text"
+                        value={newAmbition}
+                        onChange={(e) => setNewAmbition(e.target.value)}
+                        className="character__ambition"
+                      />
+                    </div>
+                    <div className="flex">
+                      <label>Compétence Principale:</label>
+                      <Input
+                        type="text"
+                        value={newMainSkill}
+                        onChange={(e) => setNewMainSkill(e.target.value)}
+                        className="character__main-skill"
+                      />
+                    </div>
+                    <div className="flex">
+                      <label>Compétence Secondaire:</label>
+                      <Input
+                        type="text"
+                        value={newSecondarySkill}
+                        onChange={(e) => setNewSecondarySkill(e.target.value)}
+                        className="character__secondary-skill"
+                      />
+                    </div>
+                    {/* ... Ajouter d'autres champs manquants ici ... */}
                   </div>
                 </div>
               </>
             ) : (
-              <div className="space-y-3">
+              <div className="space-y-3 px-5">
                 <h2 className="character__name font-bold">{editedCharacter.name}</h2>
                 <h3 className="character__role">{editedCharacter.role}</h3>
                 <h4 className="character_dicton">"{editedCharacter.dicton}"</h4>
                 <h3 className="character__faction">Ma faction : {editedCharacter.faction}</h3>
                 <h3 className="character__ambition">Mon ambition : {editedCharacter.ambition}</h3>
-                <p className="character__description">{editedCharacter.description}</p>
+                <p className="character__description max-w-xxl">{editedCharacter.description}</p>
                 <div className="!mt-5">
                   <h4 className="underline mb-2">Compétence Principale | Compétence Secondaire</h4>
                   <Tag className="mr-2" variant='solid' colorScheme='red'>{editedCharacter.mainSkill}</Tag>
@@ -110,83 +181,71 @@ function CharacterInformation() {
                 </div>
                 <h4 className="underline">Compétences Annexes</h4>
                 <div className="skills">
-                  <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[0].label}</Tag>
-                  {editedCharacter.selectedSkill[1] ? (
-                    <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[1].label}</Tag>
-                  ) : null}
-                  {editedCharacter.selectedSkill[2] ? (
-                    <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[2].label}</Tag>
-                  ) : null}
-                  {editedCharacter.selectedSkill[3] ? (
-                    <Tag className="mr-2" variant='solid' colorScheme='orange'>{editedCharacter.selectedSkill[3].label}</Tag>
-                  ) : null}
+                  {editedCharacter.selectedSkill.map((skill: any, index: any) => (
+                    <Tag key={index} className="mr-2" variant='solid' colorScheme='orange'>
+                      {skill.label}
+                    </Tag>
+                  ))}
                 </div>
                 <h4 className="underline">Traits</h4>
                 <div className="traits">
-                  {editedCharacter.selectedTrait[0] ? (
-                    <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[0].label}</Tag>
-                  ) : null}
-                  {editedCharacter.selectedTrait[1] ? (
-                    <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[1].label}</Tag>
-                  ) : null}
-                  {editedCharacter.selectedTrait[2] ? (
-                    <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[2].label}</Tag>
-                  ) : null}
-                  {editedCharacter.selectedTrait[3] ? (
-                    <Tag className="mr-2" variant='solid' colorScheme='purple'>{editedCharacter.selectedTrait[3].label}</Tag>
-                  ) : null}
+                  {editedCharacter.selectedTrait.map((trait: any, index: any) => (
+                    <Tag key={index} className="mr-2" variant='solid' colorScheme='purple'>
+                      {trait.label}
+                    </Tag>
+                  ))}
                 </div>
                 <h4 className="underline">Principes</h4>
                 <div className="flex flex-row space-x-2 justify-center">
-                  <Tag>{editedCharacter.principeDevoir}</Tag>
-                  <Tag>{editedCharacter.pointsDevoir}</Tag>
-                  <Tag>{editedCharacter.maximeDevoir}</Tag>
+                  <Tag className="flex-1">{editedCharacter.principeDevoir}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsDevoir}</Tag>
+                  <Tag className="flex-1">{editedCharacter.maximeDevoir}</Tag>
                 </div>
                 <div className="flex flex-row space-x-2 justify-center">
-                  <Tag>{editedCharacter.principeDomination}</Tag>
-                  <Tag>{editedCharacter.pointsDomination}</Tag>
-                  <Tag>{editedCharacter.maximeDomination}</Tag>
+                  <Tag className="flex-1">{editedCharacter.principeDomination}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsDomination}</Tag>
+                  <Tag className="flex-1">{editedCharacter.maximeDomination}</Tag>
                 </div>
-                <div className="flex flex-row space-x-2 justify-center items-center">
-                  <Tag>{editedCharacter.principeFoi}</Tag>
-                  <Tag>{editedCharacter.pointsFoi}</Tag>
-                  <Tag>{editedCharacter.maximeFoi}</Tag>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag className="flex-1">{editedCharacter.principeFoi}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsFoi}</Tag>
+                  <Tag className="flex-1">{editedCharacter.maximeFoi}</Tag>
                 </div>
-                <div className="flex flex-row space-x-2 justify-center items-center">
-                  <Tag>{editedCharacter.principeJustice}</Tag>
-                  <Tag>{editedCharacter.pointsJustice}</Tag>
-                  <Tag>{editedCharacter.maximeJustice}</Tag>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag className="flex-1">{editedCharacter.principeJustice}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsJustice}</Tag>
+                  <Tag className="flex-1">{editedCharacter.maximeJustice}</Tag>
                 </div>
-                <div className="flex flex-row space-x-2 justify-center items-center">
-                  <Tag>{editedCharacter.principeVerite}</Tag>
-                  <Tag>{editedCharacter.pointsVerite}</Tag>
-                  <Tag>{editedCharacter.maximeVerite}</Tag>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag className="flex-1">{editedCharacter.principeVerite}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsVerite}</Tag>
+                  <Tag className="flex-1">{editedCharacter.maximeVerite}</Tag>
                 </div>
                 <h4 className="underline">Compétences</h4>
-                <div className="flex flex-row space-x-2 justify-center items-center">
-                  <Tag>{editedCharacter.competenceAnalyse}</Tag>
-                  <Tag>{editedCharacter.pointsAnalyse}</Tag>
-                  <Tag>{editedCharacter.speAnalyse}</Tag>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag className="flex-1">{editedCharacter.competenceAnalyse}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsAnalyse}</Tag>
+                  <Tag className="flex-1">{editedCharacter.speAnalyse}</Tag>
                 </div>
-                <div className="flex flex-row space-x-2 justify-center items-center">
-                  <Tag>{editedCharacter.competenceCombat}</Tag>
-                  <Tag>{editedCharacter.pointsCombat}</Tag>
-                  <Tag>{editedCharacter.speCombat}</Tag>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag className="flex-1">{editedCharacter.competenceCombat}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsCombat}</Tag>
+                  <Tag className="flex-1">{editedCharacter.speCombat}</Tag>
                 </div>
-                <div className="flex flex-row space-x-2 justify-center items-center">
-                  <Tag>{editedCharacter.competenceDiscipline}</Tag>
-                  <Tag>{editedCharacter.pointsDiscipline}</Tag>
-                  <Tag>{editedCharacter.speDiscipline}</Tag>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag className="flex-1">{editedCharacter.competenceDiscipline}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsDiscipline}</Tag>
+                  <Tag className="flex-1">{editedCharacter.speDiscipline}</Tag>
                 </div>
-                <div className="flex flex-row space-x-2 justify-center items-center">
-                  <Tag>{editedCharacter.competenceMobilite}</Tag>
-                  <Tag>{editedCharacter.pointsMobilite}</Tag>
-                  <Tag>{editedCharacter.speMobilite}</Tag>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag className="flex-1">{editedCharacter.competenceMobilite}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsMobilite}</Tag>
+                  <Tag className="flex-1">{editedCharacter.speMobilite}</Tag>
                 </div>
-                <div className="flex flex-row space-x-2 justify-center items-center">
-                  <Tag>{editedCharacter.competenceRhetorique}</Tag>
-                  <Tag>{editedCharacter.pointsRhetorique}</Tag>
-                  <Tag>{editedCharacter.speRhetorique}</Tag>
+                <div className="flex flex-row space-x-2 justify-center">
+                  <Tag className="flex-1">{editedCharacter.competenceRhetorique}</Tag>
+                  <Tag className="ml-auto">{editedCharacter.pointsRhetorique}</Tag>
+                  <Tag className="flex-1">{editedCharacter.speRhetorique}</Tag>
                 </div>
                 <h4 className="underline">Talents</h4>
                 <div>

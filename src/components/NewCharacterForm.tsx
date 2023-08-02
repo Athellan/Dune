@@ -223,11 +223,12 @@ function NewCharacterForm() {
           />
           <label className="mb-2">Talents :</label>
           <TagsInput
-            className="mb-16 bg-white w-full border !border-gray-300 rounded block !text-black !font-medium"
+            className="mb-10 bg-white w-full border !border-gray-300 rounded block !text-black !font-medium"
             value={talent}
             onChange={handleTalentChange}
           />
           {/* Box Principes */}
+          <h1>Principes</h1>
           <Box border="1px solid white" p={4} borderRadius="md" className="mb-5">
             <Grid templateColumns='repeat(3, 1fr)' gap={2}>
               <div>
@@ -398,6 +399,7 @@ function NewCharacterForm() {
           {/* End Box Principes */}
 
           {/* Box Specialisations */}
+          <h1>Compétences</h1>
           <Box border="1px solid white" p={4} borderRadius="md" className="mb-5">
             <Grid templateColumns='repeat(3, 1fr)' gap={2}>
               <div>
