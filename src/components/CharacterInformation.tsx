@@ -63,7 +63,17 @@ function CharacterInformation() {
   };
 
   const handleSaveClick = () => {
-    updateCharacter(id, { avatar: newAvatar, description: newDescription, name: newName, dicton: newDicton, role: newRole });
+    updateCharacter(id, {
+      avatar: newAvatar,
+      description: newDescription,
+      name: newName,
+      dicton: newDicton,
+      role: newRole,
+      faction: newFaction,
+      ambition: newAmbition,
+      mainSkill: newMainSkill,
+      secondarySkill: newSecondarySkill,
+    });
     setEditMode(false);
     navigate('/');
     console.log(editedCharacter)
