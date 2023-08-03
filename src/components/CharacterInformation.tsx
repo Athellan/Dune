@@ -9,7 +9,7 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { updateCharacter } from "../lib/controller";
-import { Button, Input, Textarea, Tag, Select } from "@chakra-ui/react";
+import { Button, Input, Textarea, Tag } from "@chakra-ui/react";
 
 function CharacterInformation() {
 

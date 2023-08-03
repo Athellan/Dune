@@ -7,7 +7,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { NewCharacter } from "../types/character";
 import { deleteCharacter } from "../lib/controller";
-import { Box, Button, ButtonGroup, Card, CardBody, CardFooter, CardHeader, Divider, Heading, Stack, StackDivider, Image, Text } from "@chakra-ui/react";
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Heading, Stack, Image, Text } from "@chakra-ui/react";
 
 interface IProps {
   character: NewCharacter;
