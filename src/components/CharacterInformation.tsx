@@ -199,7 +199,7 @@ function CharacterInformation() {
                     </Tag>
                   ))}
                 </div>
-                <h4 className="underline">Traits</h4>
+                <h4 className="underline">Trait</h4>
                 <div className="traits">
                   {editedCharacter.selectedTrait.map((trait: any, index: any) => (
                     <Tag key={index} className="mr-2" variant='solid' colorScheme='purple'>
