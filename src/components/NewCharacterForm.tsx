@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import { addCharacter } from "../lib/controller";
 import { Box, Grid, Input, Textarea } from "@chakra-ui/react";
 
+
+
 function NewCharacterForm() {
 
   const navigate = useNavigate();

@@ -7,7 +7,7 @@
 
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import Select, { GroupBase } from 'react-select';
 import { updateCharacter } from "../lib/controller";
 import { Button, Input, Textarea, Tag } from "@chakra-ui/react";
 
