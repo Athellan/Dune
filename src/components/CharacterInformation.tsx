@@ -105,77 +105,94 @@ function CharacterInformation() {
                   <div className="flex flex-col">
                     <div className="flex">
                       <label>Nom:</label>
-                      <Input
-                        type="text"
-                        value={newName}
-                        onChange={(e) => setNewName(e.target.value)}
-                        className="character__name font-bold"
-                      />
+                      <div className="flex flex-grow">
+                        <Input
+                          type="text"
+                          value={newName}
+                          onChange={(e) => setNewName(e.target.value)}
+                          className="character__name font-bold flex-grow-1"
+                        />
+                      </div>
                     </div>
                     <div className="flex">
                       <label>Rôle:</label>
-                      <Input
-                        type="text"
-                        value={newRole}
-                        onChange={(e) => setNewRole(e.target.value)}
-                        className="character__role"
-                      />
+                      <div className="flex flex-grow">
+                        <Input
+                          type="text"
+                          value={newRole}
+                          onChange={(e) => setNewRole(e.target.value)}
+                          className="character__role flex-grow-1"
+                        />
+                      </div>
                     </div>
                     <div className="flex">
                       <label>Dicton:</label>
-                      <Textarea
-                        value={newDicton}
-                        onChange={(e) => setNewDicton(e.target.value)}
-                        className="character_dicton"
-                      />
+                      <div className="flex flex-grow">
+                        <Textarea
+                          value={newDicton}
+                          onChange={(e) => setNewDicton(e.target.value)}
+                          className="character_dicton flex-grow-1"
+                        />
+                      </div>
                     </div>
                     <div className="flex">
                       <label>Description:</label>
-                      <Textarea
-                        value={newDescription}
-                        onChange={(e) => setNewDescription(e.target.value)}
-                        className="character__description text-justify"
-                      />
+                      <div className="flex flex-grow">
+                        <Textarea
+                          value={newDescription}
+                          onChange={(e) => setNewDescription(e.target.value)}
+                          className="character__description text-justify flex-grow-1"
+                        />
+                      </div>
                     </div>
                     {/* Nouveaux champs ajoutés */}
                     <div className="flex">
                       <label>Faction:</label>
-                      <Input
-                        type="text"
-                        value={newFaction}
-                        onChange={(e) => setNewFaction(e.target.value)}
-                        className="character__faction"
-                      />
+                      <div className="flex flex-grow">
+                        <Input
+                          type="text"
+                          value={newFaction}
+                          onChange={(e) => setNewFaction(e.target.value)}
+                          className="character__faction flex-grow-1"
+                        />
+                      </div>
                     </div>
                     <div className="flex">
                       <label>Ambition:</label>
-                      <Input
-                        type="text"
-                        value={newAmbition}
-                        onChange={(e) => setNewAmbition(e.target.value)}
-                        className="character__ambition"
-                      />
+                      <div className="flex flex-grow">
+                        <Input
+                          type="text"
+                          value={newAmbition}
+                          onChange={(e) => setNewAmbition(e.target.value)}
+                          className="character__ambition flex-grow-1"
+                        />
+                      </div>
                     </div>
                     <div className="flex">
                       <label>Compétence Principale:</label>
-                      <Input
-                        type="text"
-                        value={newMainSkill}
-                        onChange={(e) => setNewMainSkill(e.target.value)}
-                        className="character__main-skill"
-                      />
+                      <div className="flex flex-grow">
+                        <Input
+                          type="text"
+                          value={newMainSkill}
+                          onChange={(e) => setNewMainSkill(e.target.value)}
+                          className="character__main-skill flex-grow-1"
+                        />
+                      </div>
                     </div>
                     <div className="flex">
                       <label>Compétence Secondaire:</label>
-                      <Input
-                        type="text"
-                        value={newSecondarySkill}
-                        onChange={(e) => setNewSecondarySkill(e.target.value)}
-                        className="character__secondary-skill"
-                      />
+                      <div className="flex flex-grow">
+                        <Input
+                          type="text"
+                          value={newSecondarySkill}
+                          onChange={(e) => setNewSecondarySkill(e.target.value)}
+                          className="character__secondary-skill flex-grow-1"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
+
               </>
             ) : (
               <div className="space-y-3 px-5">
