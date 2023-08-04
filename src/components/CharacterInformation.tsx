@@ -142,34 +142,35 @@ function CharacterInformation() {
                           value={newDescription}
                           onChange={(e) => setNewDescription(e.target.value)}
                           className="character__description text-justify flex-grow-1"
+                          rows={10}
                         />
                       </div>
                     </div>
                     {/* Nouveaux champs ajoutés */}
                     <div className="flex">
-                      <label>Faction:</label>
+                      <label className="mr-28">Faction:</label>
                       <div className="flex flex-grow">
                         <Input
                           type="text"
                           value={newFaction}
                           onChange={(e) => setNewFaction(e.target.value)}
-                          className="character__faction flex-grow-1"
+                          className="character__faction flex-grow-1 ml-3"
                         />
                       </div>
                     </div>
                     <div className="flex">
-                      <label>Ambition:</label>
+                      <label className="mr-28">Ambition:</label>
                       <div className="flex flex-grow">
                         <Input
                           type="text"
                           value={newAmbition}
                           onChange={(e) => setNewAmbition(e.target.value)}
-                          className="character__ambition flex-grow-1"
+                          className="character__ambition flex-grow-1 ml-0.5"
                         />
                       </div>
                     </div>
                     <div className="flex">
-                      <label>Compétence Principale:</label>
+                      <label className="mr-2.5">Compétence Principale:</label>
                       <div className="flex flex-grow">
                         <Input
                           type="text"
