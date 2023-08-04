@@ -126,12 +126,12 @@ function CharacterInformation() {
                       </div>
                     </div>
                     <div className="flex">
-                      <label>Dicton:</label>
+                      <label className="mr-32">Dicton:</label>
                       <div className="flex flex-grow">
                         <Textarea
                           value={newDicton}
                           onChange={(e) => setNewDicton(e.target.value)}
-                          className="character_dicton flex-grow-1"
+                          className="character_dicton flex-grow-1 ml-1"
                         />
                       </div>
                     </div>
