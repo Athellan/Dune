@@ -136,7 +136,7 @@ function CharacterInformation() {
                       </div>
                     </div>
                     <div className="flex">
-                      <label>Description:</label>
+                      <label className="mr-24">Description:</label>
                       <div className="flex flex-grow">
                         <Textarea
                           value={newDescription}
