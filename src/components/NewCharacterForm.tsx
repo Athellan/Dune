@@ -62,6 +62,14 @@ function NewCharacterForm() {
     setTalent(newTalent);
   };
 
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = e.target.value;
+    const numericValue = parseInt(inputValue);
+    if (!isNaN(numericValue)) {
+      setLevel(numericValue);
+    }
+  };
+
   const handleTraitChange = (selectedTrait: any) => {
     setSelectedTrait(selectedTrait);
   };
@@ -169,8 +177,8 @@ function NewCharacterForm() {
           <Input
             className="mb-5"
             bg='white'
-            disabled
-            value={level}
+            value={level.toString()} // Convert the number back to string for displaying
+            onChange={handleInputChange}
           />
           <label>Dicton :</label>
           <Input
