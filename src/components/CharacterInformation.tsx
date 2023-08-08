@@ -74,7 +74,7 @@ function CharacterInformation() {
           <hr className="border-t border-black mx-auto w-4/6" />
           <div className="mb-5">
             <Text>Niveau : {(editedCharacter.level) / 10}</Text>
-            <Progress value={editedCharacter.level} />
+            <Progress className="mx-40" value={editedCharacter.level} />
           </div>
           <div className="">
             {editMode ? (
@@ -97,8 +97,11 @@ function CharacterInformation() {
                       <div className="flex flex-grow">
                         <Input
                           type="text"
-                          value={(newLevel) / 10}
-                          onChange={(e) => setNewLevel(e.target.value)}
+                          value={newLevel >= 10 ? (newLevel / 10).toString() : newLevel}
+                          onChange={(e) => {
+                            const inputValue = e.target.value;
+                            setNewLevel(inputValue);
+                          }}
                           className="character__role flex-grow-1 ml-3"
                         />
                       </div>

@@ -36,7 +36,7 @@ function Character({ character }: IProps) {
         />
         <Stack>
           <CardBody>
-            <Heading className="mb-3" size='2xl'>{character.name}</Heading>
+            <Heading size='2xl'>{character.name}</Heading>
             <Text className="mb-3" fontSize='2xl'>
               {character.role}
             </Text>
@@ -46,15 +46,13 @@ function Character({ character }: IProps) {
             <Text className="ml-12" maxW="md" style={{ textAlign: 'justify' }}>
               {character.description}
             </Text>
-            <div className="mt-10">
-              <Text>Niveau : {character.level ? character.level / 10 : 1}/ 10</Text>
-              <Progress value={character.level} />
-            </div>
           </CardBody>
+          <div>
+            <Text>Niveau : {character.level ? character.level / 10 : 1} / 10</Text>
+            <Progress className="mx-14" value={character.level} />
+          </div>
           <CardFooter>
-
             <ButtonGroup spacing='80'>
-
               <Link to={`/character/${character.id}`} state={{ character: character }}>
                 <Button variant='solid' colorScheme='blue'>
                   En savoir plus
