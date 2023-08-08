@@ -47,7 +47,7 @@ function Character({ character }: IProps) {
               {character.description}
             </Text>
             <div className="mt-10">
-              <Text>Niveau : {character.level ? character.level / 10 : 0}/ 10</Text>
+              <Text>Niveau : {character.level ? character.level / 10 : 1}/ 10</Text>
               <Progress value={character.level} />
             </div>
           </CardBody>

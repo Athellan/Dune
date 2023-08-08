@@ -97,7 +97,7 @@ function CharacterInformation() {
                       <div className="flex flex-grow">
                         <Input
                           type="text"
-                          value={newLevel / 10}
+                          value={(newLevel) / 10}
                           onChange={(e) => setNewLevel(e.target.value)}
                           className="character__role flex-grow-1 ml-3"
                         />
