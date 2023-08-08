@@ -50,4 +50,5 @@ export interface AddCharacter {
     competenceRhetorique: string
     pointsRhetorique: string
     speRhetorique: string
+    level: number
 }

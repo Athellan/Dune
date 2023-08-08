@@ -56,6 +56,7 @@ function NewCharacterForm() {
   const [competenceRhetorique, setCompetenceRhetorique] = useState('');
   const [pointsRhetorique, setPointsRhetorique] = useState('');
   const [speRhetorique, setSpeRhetorique] = useState('');
+  const [level, setLevel] = useState(1);
 
   const handleTalentChange = (newTalent: any) => {
     setTalent(newTalent);
@@ -114,6 +115,7 @@ function NewCharacterForm() {
       competenceRhetorique,
       pointsRhetorique,
       speRhetorique,
+      level,
     });
     navigate("/");
     console.log("addNewCharacter");
@@ -162,6 +164,13 @@ function NewCharacterForm() {
             required
             value={role}
             onChange={(e) => setRole(e.target.value)}
+          />
+          <label>Niveau :</label>
+          <Input
+            className="mb-5"
+            bg='white'
+            disabled
+            value={level}
           />
           <label>Dicton :</label>
           <Input
