@@ -8,7 +8,7 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { updateCharacter } from "../lib/controller";
-import { Button, Input, Textarea, Tag } from "@chakra-ui/react";
+import { Button, Input, Textarea, Tag, Progress, Text } from "@chakra-ui/react";
 
 function CharacterInformation() {
 
@@ -26,34 +26,7 @@ function CharacterInformation() {
   const [newSecondarySkill, setNewSecondarySkill] = useState(editedCharacter.secondarySkill);
   const [newFaction, setNewFaction] = useState(editedCharacter.faction);
   const [newAmbition, setNewAmbition] = useState(editedCharacter.ambition);
-  // const [newSelectedSkill, setNewSelectedSkill] = useState(editedCharacter.selectedSkill);
-  // const [newSelectedTrait, setNewSelectedTrait] = useState(editedCharacter.selectedTrait);
-  // const [newPrincipeDevoir, setNewPrincipeDevoir] = useState(editedCharacter.principeDevoir);
-  // const [newPointsDevoir, setNewPointsDevoir] = useState(editedCharacter.pointsDevoir);
-  // const [newPrincipeDomination, setNewPrincipeDomination] = useState(editedCharacter.principeDomination);
-  // const [newPointsDomination, setNewPointsDomination] = useState(editedCharacter.pointsDomination);
-  // const [newPrincipeFoi, setNewPrincipeFoi] = useState(editedCharacter.principeFoi);
-  // const [newPointsFoi, setNewPointsFoi] = useState(editedCharacter.pointsFoi);
-  // const [newPrincipeJustice, setNewPrincipeJustice] = useState(editedCharacter.principeJustice);
-  // const [newPointsJustice, setNewPointsJustice] = useState(editedCharacter.pointsJustice);
-  // const [newPrincipeVerite, setNewPrincipeVerite] = useState(editedCharacter.principeVerite);
-  // const [newPointsVerite, setNewPointsVerite] = useState(editedCharacter.pointsVerite);
-  // const [newCompetenceAnalyse, setNewCompetenceAnalyse] = useState(editedCharacter.competenceAnalyse);
-  // const [newPointsAnalyse, setNewPointsAnalyse] = useState(editedCharacter.pointsAnalyse);
-  // const [newSpeAnalyse, setNewSpeAnalyse] = useState(editedCharacter.speAnalyse);
-  // const [newCompetenceCombat, setNewCompetenceCombat] = useState(editedCharacter.competenceCombat);
-  // const [newPointsCombat, setNewPointsCombat] = useState(editedCharacter.pointsCombat);
-  // const [newSpeCombat, setNewSpeCombat] = useState(editedCharacter.speCombat);
-  // const [newCompetenceDiscipline, setNewCompetenceDiscipline] = useState(editedCharacter.competenceDiscipline);
-  // const [newPointsDiscipline, setNewPointsDiscipline] = useState(editedCharacter.pointsDiscipline);
-  // const [newSpeDiscipline, setNewSpeDiscipline] = useState(editedCharacter.speDiscipline);
-  // const [newCompetenceMobilite, setNewCompetenceMobilite] = useState(editedCharacter.competenceMobilite);
-  // const [newPointsMobilite, setNewPointsMobilite] = useState(editedCharacter.pointsMobilite);
-  // const [newSpeMobilite, setNewSpeMobilite] = useState(editedCharacter.speMobilite);
-  // const [newCompetenceRhetorique, setNewCompetenceRhetorique] = useState(editedCharacter.competenceRhetorique);
-  // const [newPointsRhetorique, setNewPointsRhetorique] = useState(editedCharacter.pointsRhetorique);
-  // const [newSpeRhetorique, setNewSpeRhetorique] = useState(editedCharacter.speRhetorique);
-  // const [newTalent, setNewTalent] = useState(editedCharacter.talent);
+  const [newLevel, setNewLevel] = useState(editedCharacter.level);
 
   const id = location.state.character.id
 
@@ -72,6 +45,7 @@ function CharacterInformation() {
       ambition: newAmbition,
       mainSkill: newMainSkill,
       secondarySkill: newSecondarySkill,
+      level: newLevel * 10,
     });
     setEditMode(false);
     navigate('/');
@@ -98,6 +72,10 @@ function CharacterInformation() {
         <div className="flex flex-col">
           <img src={editedCharacter.avatar} className="character-image mx-auto mt-5" />
           <hr className="border-t border-black mx-auto w-4/6" />
+          <div className="mb-5">
+            <Text>Niveau : {(editedCharacter.level) / 10}</Text>
+            <Progress value={editedCharacter.level} />
+          </div>
           <div className="">
             {editMode ? (
               <>
@@ -111,6 +89,17 @@ function CharacterInformation() {
                           value={newName}
                           onChange={(e) => setNewName(e.target.value)}
                           className="character__name font-bold flex-grow-1"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex">
+                      <label className="mr-32">Level:</label>
+                      <div className="flex flex-grow">
+                        <Input
+                          type="text"
+                          value={newLevel / 10}
+                          onChange={(e) => setNewLevel(e.target.value)}
+                          className="character__role flex-grow-1 ml-3"
                         />
                       </div>
                     </div>

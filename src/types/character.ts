@@ -5,6 +5,7 @@ export interface NewCharacter {
     role?: string
     description?: string
     dicton?: string
+    level?: number
 }
 
 export interface AddCharacter {

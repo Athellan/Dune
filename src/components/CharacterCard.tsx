@@ -7,7 +7,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { NewCharacter } from "../types/character";
 import { deleteCharacter } from "../lib/controller";
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Heading, Stack, Image, Text } from "@chakra-ui/react";
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Heading, Stack, Image, Text, Progress } from "@chakra-ui/react";
 
 interface IProps {
   character: NewCharacter;
@@ -17,7 +17,9 @@ interface IProps {
 function Character({ character }: IProps) {
 
   const navigate = useNavigate();
+
   return (
+
     <div className="flex items-center justify-center">
       <Card
         className="mb-10"
@@ -44,9 +46,15 @@ function Character({ character }: IProps) {
             <Text className="ml-12" maxW="md" style={{ textAlign: 'justify' }}>
               {character.description}
             </Text>
+            <div className="mt-10">
+              <Text>Niveau : {character.level ? character.level / 10 : 0}/ 10</Text>
+              <Progress value={character.level} />
+            </div>
           </CardBody>
           <CardFooter>
+
             <ButtonGroup spacing='80'>
+
               <Link to={`/character/${character.id}`} state={{ character: character }}>
                 <Button variant='solid' colorScheme='blue'>
                   En savoir plus
