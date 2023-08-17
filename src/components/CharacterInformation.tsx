@@ -107,7 +107,7 @@ function CharacterInformation() {
                       </div>
                     </div>
                     <div className="flex">
-                      <label className="mr-36">Rôle:</label>
+                      <label className="mr-36">Rôles:</label>
                       <div className="flex flex-grow">
                         <Input
                           type="text"
