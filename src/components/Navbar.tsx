@@ -33,7 +33,7 @@ function Navbar() {
             borderRadius: "8px",
           }}
           to="/newcharacter"
-          onClick={() => handleButtonClick("nouveaux")}
+          onClick={() => handleButtonClick("nouveau")}
         >
           Nouveau Personnage
         </Link>
