@@ -21,7 +21,7 @@ function Navbar() {
             borderRadius: "8px",
           }}
           to="/"
-          onClick={() => handleButtonClick("list")}
+          onClick={() => handleButtonClick("liste")}
         >
           Liste de l'équipe
         </Link>
