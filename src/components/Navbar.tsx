@@ -23,7 +23,7 @@ function Navbar() {
           to="/"
           onClick={() => handleButtonClick("liste")}
         >
-          Liste de l'équipes
+          Liste de l'équipe
         </Link>
         <Link
           style={{
