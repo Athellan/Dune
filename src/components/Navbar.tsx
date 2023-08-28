@@ -23,7 +23,7 @@ function Navbar() {
           to="/"
           onClick={() => handleButtonClick("liste")}
         >
-          Liste de l'équipe
+          Liste de l'équipes
         </Link>
         <Link
           style={{
@@ -35,7 +35,7 @@ function Navbar() {
           to="/newcharacter"
           onClick={() => handleButtonClick("nouveau")}
         >
-          Nouveau Personnage
+          Nouveau Personnages
         </Link>
         <Link
           style={{
