@@ -35,7 +35,7 @@ function Navbar() {
           to="/newcharacter"
           onClick={() => handleButtonClick("nouveau")}
         >
-          Nouveaux PersonnageS
+          Nouveau Personnage
         </Link>
         <Link
           style={{
