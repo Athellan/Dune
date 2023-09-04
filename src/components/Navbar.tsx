@@ -47,7 +47,7 @@ function Navbar() {
           to="/search"
           onClick={() => handleButtonClick("search")}
         >
-          Recherches
+          Recherche
         </Link>
       </div>
     </div>
