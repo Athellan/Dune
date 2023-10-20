@@ -47,7 +47,7 @@ function Navbar() {
           to="/search"
           onClick={() => handleButtonClick("search")}
         >
-          Recherche Cecie est un tst
+          Recherche Cecie
         </Link>
       </div>
     </div>
